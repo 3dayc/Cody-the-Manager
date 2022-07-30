@@ -1,0 +1,1226 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detction" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>PMS v3.5</title>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/xeicon.min.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/layout.css" />
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="../css/contents.css" />
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="open_gnb"><img src="../images/logo_cody.png" alt="Cody The Manager" class="logo" /><span class="txt"><strong>PMS</strong> v.3.5</span></h1>
+		<button type="button" class="btn_sitemap"><img src="../images/btn_sitemap.png" alt="전체 메뉴" /></button>
+		<button type="button" class="btn_gnb_all"><img src="../images/btn_sitemap.png" alt="전체 메뉴" class="ico_open" /></button>
+		<nav id="gnb">
+            <ul>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi List</a></li>
+                        <li><a href="javascript:void(0);">Room Inventory</a></li>
+                        <li><a href="javascript:void(0);">Account Profile</a></li>
+                        <li><a href="javascript:void(0);">CMS List</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-network-home"></i><span class="txt">Front</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi Front</a></li>
+                        <li><a href="javascript:void(0);">Assign Status</a></li>
+                        <li><a href="javascript:void(0);">Room Status</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-money"></i><span class="txt">Cashiering</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Check-Out</a></li>
+                        <li><a href="javascript:void(0);">Exchange</a></li>
+                        <li><a href="javascript:void(0);">Deposit List</a></li>
+                        <li><a href="javascript:void(0);">Night Audit</a></li>
+                        <li><a href="javascript:void(0);">A/R</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-ico-hk"></i><span class="txt">HK</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Room Status</a></li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a></li>
+                        <li><a href="javascript:void(0);">O.O.O</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+                        <li><a href="javascript:void(0);">Multi List</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Outlet</a></li>
+                        <li><a href="javascript:void(0);">Menu</a></li>
+                        <li><a href="javascript:void(0);">E.Reservation</a></li>
+                        <li><a href="javascript:void(0);">Event List</a></li>
+                        <li><a href="javascript:void(0);">E.Calendar</a></li>
+                        <li><a href="javascript:void(0);">E.Monthly Table</a></li>
+                        <li><a href="javascript:void(0);">E.Daily Table</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-document"></i><span class="txt">Report</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Dash Board</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Front</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Reservation </a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Sales</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Daily Report</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Ananlysis</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-cog"></i><span class="txt">Config</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">RM Setting</a></li>
+                        <li><a href="javascript:void(0);">Rm Number List</a></li>
+                        <li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+                        <li><a href="javascript:void(0);">Service/Request</a></li>
+                        <li><a href="javascript:void(0);">Calendar</a></li>
+                        <li><a href="javascript:void(0);">Rate Plan</a></li>
+                        <li><a href="javascript:void(0);">Package</a></li>
+                        <li><a href="javascript:void(0);">Room Block</a></li>
+                        <li><a href="javascript:void(0);">CMS Setting</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-user"> </i><span class="txt">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<div id="g_utile">
+			<fieldset class="search_form">
+				<legend>Hotel Search</legend>
+				<p>
+					<select>
+						<option value="">Jenna hotel 01</option>
+						<option value="">Jenna hotel 02</option>
+						<option value="">Jenna hotel 03</option>
+					</select>
+					<span class="keyword_dropbox">
+						<input type="text" onkeydown="keywordDropbox(this,event)" placeholder="Enter the search word.">
+						<span class="kd_list">
+							<b><a href="javascript:void(0)">Reservation ◀ Reservation</a></b>
+							<b><a href="javascript:void(0)" class="hover">Reservation on andby ◀ Reservation ◀ Reservation ◀ E.Reservation</a></b>
+							<b><a href="javascript:void(0)">Reservation ◀ Report</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+						</span>
+					</span>
+					<button type="button"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+				</p>
+			</fieldset>
+			<ul class="user_menu">
+				<li class="user_info">
+					<button type="button"><i class="xi-profile"></i><span class="txt">Jenna</span></button>
+				</li>
+				<li class="pms_day">2022.01.01</li>
+				<li class="logout">
+					<button type="button" class="info_log"><i class="xi-log-out"><b class="art_txt">로그아웃</b></i></button>
+				</li>
+				<li class="help">
+					<button type="button" class="info_log"><i class="xi-help-o"><b class="art_txt">도움말</b></i></button>
+				</li>
+			</ul>
+		</div>
+		<nav id="g_contents_navi">
+			<ul class="btn_quick_menu">
+				<li>
+					<a href="#qm_bookmark">
+						<i class="xi-star-o open"><b class="art_txt">즐겨찾기</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+				<li>
+					<a href="#qm_recent">
+						<i class="xi-ico-history open"><b class="art_txt">최근방문</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="current_open_tab">
+				<li>
+					<a href="#dashBoard" onclick="showTabContent(this); return false"><span class="txt">Dash Board</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#maidAssign" onclick="showTabContent(this); return false" class="active"><span class="txt">Maid Assign</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+			</ul>
+			<div class="btn_cot_set">
+				<button type="button" class="btn_prev"><i class="xi-angle-left-min"><b class="art_txt">이전</b></i></button>
+				<button type="button" class="btn_next"><i class="xi-angle-right-min"><b class="art_txt">다음</b></i></button>
+			</div>
+		</nav>
+		<script>
+			initCurrentOpenTabScroll(); //텝 생성 직후 실행되어야 함
+		</script>
+	</header>
+	<main id="container">
+		<article class="content" id="dashBoard">
+			<h2><span class="txt">Dash Board</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:skyblue">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="maidAssign" style="display:block;">
+			<h2><span class="txt">Maid Assign</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner">
+				<section class="search_result">
+					<div class="inner_tabnavi" data-inner-tabnavi="maid_assign">
+						<ul>
+							<li><a href="#ma_assign" class="active">Assign</a></li>
+							<li><a href="#ma_report">Report</a></li>
+						</ul>
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="maid_assign" id="ma_assign" style="display:block">
+						<div class="maid_assign">
+							<div class="inner_search_filter">
+								<table>
+									<caption>Search filter</caption>
+									<colgroup>
+										<col>
+										<col style="width:284px">
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>
+												<ul class="write_form">
+													<li>
+														<span class="category">Date</span>
+														<span class="field">
+															<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+														</span>
+													</li>
+													<li>
+														<span class="category">Maid</span>
+														<span class="field">
+															<select style="width:110px">
+																<option value=""></option>
+															</select>
+														</span>
+													</li>
+												</ul>
+												<div class="multi_selected" id="maMaid">
+													<ul>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+													</ul>
+													<div class="btn_ms_set">
+														<button type="button" class="up"><img src="../images/ico_ms_up.png" alt="Up" /></button>
+														<button type="button" class="down"><img src="../images/ico_ms_down.png" alt="Down" /></button>
+													</div>
+												</div>
+												<script>
+													scrollMultiSelected($("#maMaid"));
+												</script>
+												<ul class="write_form">
+													<li>
+														<span class="category">Clean Status</span>
+														<span class="field">
+															<select style="width:110px">
+																<option value=""></option>
+															</select>
+														</span>
+													</li>
+												</ul>
+												<div class="multi_selected" id="maCleanStatus">
+													<ul>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+													</ul>
+													<div class="btn_ms_set">
+														<button type="button" class="up"><img src="../images/ico_ms_up.png" alt="Up" /></button>
+														<button type="button" class="down"><img src="../images/ico_ms_down.png" alt="Down" /></button>
+													</div>
+												</div>
+												<script>
+													scrollMultiSelected($("#maCleanStatus"));
+												</script>
+												<div class="btn_search">
+													<button type="button" class="btn_basic dark"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+													<button type="button" class="btn_basic"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+												</div>
+											</td>
+											<td class="btn_isf_set">
+												<button type="button" class="btn_basic md"><i class="xi-print"></i><span class="txt">Print</span></button>
+												<button type="button" class="btn_basic md"><i class="xi-save"></i><span class="txt">Save</span></button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="scroll_table">
+								<div class="st_list" id="maid_assign_list">
+									<table draggable="false">
+										<caption>Maid Assign Member</caption>
+										<colgroup>
+											<col style="width:60px">
+											<col style="width:64px">
+											<col style="width:80px">
+											<col style="width:80px">
+											<col style="width:150px">
+											<col style="width:110px">
+											<col style="width:110px">
+											<col style="width:40px">
+											<col style="width:40px">
+											<col style="width:64px">
+											<col style="width:40px">
+											<col style="width:110px">
+											<col style="width:40px">
+											<col style="width:50px" span="30" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" class="room_num">Room #</th>
+												<th scope="col" class="rm_count">Rm Count</th>
+												<th scope="col" class="room_type">Room Type</th>
+												<th scope="col" class="clean_status">Clean Status</th>
+												<th scope="col" class="guest_name">Guest Name</th>
+												<th scope="col" class="arr_date">Arr. Date</th>
+												<th scope="col" class="dep_date">Dep. Date</th>
+												<th scope="col" class="adult">Adult</th>
+												<th scope="col" class="child">Child</th>
+												<th scope="col" class="extra_bed">Extra Bed</th>
+												<th scope="col" class="c_o">C/O</th>
+												<th scope="col" class="make_up_requeset">Make up Request</th>
+												<th scope="col" class="dnd">DND</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+												<th scope="col">김영희</th>
+												<th scope="col">박나래</th>
+												<th scope="col">홍현희</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" class="room_num">101</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">YOYOMA</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user1" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">102</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">DAVID GARRETT</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user2" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">101</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">YOYOMA</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user3" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">102</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">DAVID GARRETT</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user4" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">101</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">YOYOMA</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user5" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">102</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">DAVID GARRETT</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user6" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">101</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">YOYOMA</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user7" /></td>
+											</tr>
+											<tr>
+												<th scope="row" class="room_num">102</th>
+												<th scope="row" class="rm_count">1</th>
+												<th scope="row" class="room_type">STD</th>
+												<th scope="row" class="clean_status">VD</th>
+												<th scope="row" class="guest_name">DAVID GARRETT</th>
+												<th scope="row" class="arr_date">2021-08-06 <span class="txt_day sat">토</span></th>
+												<th scope="row" class="dep_date">2021-08-16 <span class="txt_day sun">일</span></th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">Y</th>
+												<th scope="row" class="c_o">Y</th>
+												<th scope="row" class="make_up_requeset">Y</th>
+												<th scope="row" class="dnd">Y</th>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+												<td class="check_radio"><input type="radio" name="ma_user8" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="st_total">
+									<table>
+										<caption>Table Foot</caption>
+										<colgroup>
+											<col style="width:654px">
+											<col style="width:40px">
+											<col style="width:40px">
+											<col style="width:64px">
+											<col style="width:40px">
+											<col style="width:110px">
+											<col style="width:40px">
+											<col style="width:50px" span="30" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row" class="total">Total counts: 3&nbsp;&nbsp;Total Rooms: 100.0</th>
+												<th scope="row" class="adult">20</th>
+												<th scope="row" class="child">20</th>
+												<th scope="row" class="extra_bed">3</th>
+												<th scope="row" class="c_o">3</th>
+												<th scope="row" class="make_up_requeset">3</th>
+												<th scope="row" class="dnd">3</th>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<script type="text/javascript">
+								var maidAssignList = $("#maid_assign_list");
+								var malTbody = maidAssignList.find("table>tbody");
+								var malTd = malTbody.find("td");
+								var dragIs = false;
+								
+								malTbody.on("mousedown",function() {
+									dragIs = true;
+								})
+								malTd.on("mousemove",function() {
+									if(dragIs == true && $(this).find("input[type='radio']").length > 0) {
+										console.log($(this).find("input[type='radio']").attr("name"))
+										$(this).find("input[type='radio']").click();
+									}
+								})
+								$("body").on("mouseup",function() {
+									dragIs = false;
+								})
+							</script>
+						</div>
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="maid_assign" id="ma_report">
+						Rroup
+					</div>
+					<script>
+						innerTabNavi("maid_assign"); //컨텐츠 내부 텝
+					</script>
+				</section>
+			</div>
+		</article>
+		<article class="content" id="sale">
+			<h2><span class="txt">Sale</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:yellow">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+	</main>
+	<footer id="footer">
+		<p class="copyright">Copyright (C) CODY THE MANAGER All rights reserved.</p>
+		<ul class="f_menu">
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Use terms</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Sitemap -->
+	<nav id="sitemap">
+		<ul>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi List</a></li>
+					<li><a href="javascript:void(0);">Room Inventory</a></li>
+					<li><a href="javascript:void(0);">Account Profile</a></li>
+					<li><a href="javascript:void(0);">CMS List</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-network-home"></i><span class="txt">Front</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi Front</a></li>
+					<li><a href="javascript:void(0);">Assign Status</a></li>
+					<li><a href="javascript:void(0);">Room Status</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-money"></i><span class="txt">Cashiering</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Check-Out</a></li>
+					<li><a href="javascript:void(0);">Exchange</a></li>
+					<li><a href="javascript:void(0);">Deposit List</a></li>
+					<li><a href="javascript:void(0);">Night Audit</a></li>
+					<li><a href="javascript:void(0);">A/R</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-ico-hk"></i><span class="txt">HK</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Room Status</a></li>
+					<li><a href="javascript:void(0);">Room Cleaning</a></li>
+					<li><a href="javascript:void(0);">O.O.O</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+					<li><a href="javascript:void(0);">Multi List</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Outlet</a></li>
+					<li><a href="javascript:void(0);">Menu</a></li>
+					<li><a href="javascript:void(0);">E.Reservation</a></li>
+					<li><a href="javascript:void(0);">Event List</a></li>
+					<li><a href="javascript:void(0);">E.Calendar</a></li>
+					<li><a href="javascript:void(0);">E.Monthly Table</a></li>
+					<li><a href="javascript:void(0);">E.Daily Table</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-document"></i><span class="txt">Report</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Dash Board</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Front</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Reservation </a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Sales</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Daily Report</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Ananlysis</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-cog"></i><span class="txt">Config</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">RM Setting</a></li>
+					<li><a href="javascript:void(0);">Rm Number List</a></li>
+					<li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+					<li><a href="javascript:void(0);">Service/Request</a></li>
+					<li><a href="javascript:void(0);">Calendar</a></li>
+					<li><a href="javascript:void(0);">Rate Plan</a></li>
+					<li><a href="javascript:void(0);">Package</a></li>
+					<li><a href="javascript:void(0);">Room Block</a></li>
+					<li><a href="javascript:void(0);">CMS Setting</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Room Cleaning</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-user"> </i><span class="txt">Admin</span>
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="btn_close"><i class="xi-close-min"></i><span class="txt">Close</span></button>
+	</nav>
+	<!-- //Sitemap -->
+	
+	<!-- Quick Menu  -->
+	<aside id="quick_menu">
+		<div class="qm_wrap" id="qm_bookmark">
+			<h3 class="bookmark"><span class="txt">Bookmark</span><button type="button" class="add"><i class="xi-plus-circle"><b class="art_txt">추가</b></i></button></h3>
+			<ul>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+			</ul>
+		</div>
+		<div class="qm_wrap" id="qm_recent">
+			<h3 class="recent"><span class="txt">Recent Menu</span></h3>
+			<ul>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+			</ul>
+		</div>
+		<div class="btn_log_set">
+			<button type="button" class="btn" disabled><i class="xi-book"></i><span class="txt">Log Book</span></button>
+			<button type="button" class="btn" disabled><i class="xi-log-out"></i><span class="txt">Jenna</span></button>
+		</div>
+	</aside>
+	<!-- Quick Menu -->
+</body>
+</html>

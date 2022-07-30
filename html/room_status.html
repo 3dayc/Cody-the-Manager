@@ -1,0 +1,4099 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detction" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>PMS v3.5</title>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/xeicon.min.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/layout.css" />
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="../css/contents.css" />
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="open_gnb"><img src="../images/logo_cody.png" alt="Cody The Manager" class="logo" /><span class="txt"><strong>PMS</strong> v.3.5</span></h1>
+		<button type="button" class="btn_sitemap"><img src="../images/btn_sitemap.png" alt="전체 메뉴" /></button>
+		<button type="button" class="btn_gnb_all"><img src="../images/btn_sitemap.png" alt="전체 메뉴" class="ico_open" /></button>
+		<nav id="gnb">
+            <ul>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi List</a></li>
+                        <li><a href="javascript:void(0);">Room Inventory</a></li>
+                        <li><a href="javascript:void(0);">Account Profile</a></li>
+                        <li><a href="javascript:void(0);">CMS List</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-network-home"></i><span class="txt">Front</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi Front</a></li>
+                        <li><a href="javascript:void(0);">Assign Status</a></li>
+                        <li><a href="javascript:void(0);">Room Status</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-money"></i><span class="txt">Cashiering</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Check-Out</a></li>
+                        <li><a href="javascript:void(0);">Exchange</a></li>
+                        <li><a href="javascript:void(0);">Deposit List</a></li>
+                        <li><a href="javascript:void(0);">Night Audit</a></li>
+                        <li><a href="javascript:void(0);">A/R</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-ico-hk"></i><span class="txt">HK</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Room Status</a></li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a></li>
+                        <li><a href="javascript:void(0);">O.O.O</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+                        <li><a href="javascript:void(0);">Multi List</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Outlet</a></li>
+                        <li><a href="javascript:void(0);">Menu</a></li>
+                        <li><a href="javascript:void(0);">E.Reservation</a></li>
+                        <li><a href="javascript:void(0);">Event List</a></li>
+                        <li><a href="javascript:void(0);">E.Calendar</a></li>
+                        <li><a href="javascript:void(0);">E.Monthly Table</a></li>
+                        <li><a href="javascript:void(0);">E.Daily Table</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-document"></i><span class="txt">Report</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Dash Board</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Front</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Reservation </a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Sales</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Daily Report</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Ananlysis</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-cog"></i><span class="txt">Config</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">RM Setting</a></li>
+                        <li><a href="javascript:void(0);">Rm Number List</a></li>
+                        <li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+                        <li><a href="javascript:void(0);">Service/Request</a></li>
+                        <li><a href="javascript:void(0);">Calendar</a></li>
+                        <li><a href="javascript:void(0);">Rate Plan</a></li>
+                        <li><a href="javascript:void(0);">Package</a></li>
+                        <li><a href="javascript:void(0);">Room Block</a></li>
+                        <li><a href="javascript:void(0);">CMS Setting</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-user"> </i><span class="txt">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<div id="g_utile">
+			<fieldset class="search_form">
+				<legend>Hotel Search</legend>
+				<p>
+					<select>
+						<option value="">Jenna hotel 01</option>
+						<option value="">Jenna hotel 02</option>
+						<option value="">Jenna hotel 03</option>
+					</select>
+					<span class="keyword_dropbox">
+						<input type="text" onkeydown="keywordDropbox(this,event)" placeholder="Enter the search word.">
+						<span class="kd_list">
+							<b><a href="javascript:void(0)">Reservation ◀ Reservation</a></b>
+							<b><a href="javascript:void(0)" class="hover">Reservation on andby ◀ Reservation ◀ Reservation ◀ E.Reservation</a></b>
+							<b><a href="javascript:void(0)">Reservation ◀ Report</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+						</span>
+					</span>
+					<button type="button"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+				</p>
+			</fieldset>
+			<ul class="user_menu">
+				<li class="user_info">
+					<button type="button"><i class="xi-profile"></i><span class="txt">Jenna</span></button>
+				</li>
+				<li class="pms_day">2022.01.01</li>
+				<li class="logout">
+					<button type="button" class="info_log"><i class="xi-log-out"><b class="art_txt">로그아웃</b></i></button>
+				</li>
+				<li class="help">
+					<button type="button" class="info_log"><i class="xi-help-o"><b class="art_txt">도움말</b></i></button>
+				</li>
+			</ul>
+		</div>
+		<nav id="g_contents_navi">
+			<ul class="btn_quick_menu">
+				<li>
+					<a href="#qm_bookmark">
+						<i class="xi-star-o open"><b class="art_txt">즐겨찾기</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+				<li>
+					<a href="#qm_recent">
+						<i class="xi-ico-history open"><b class="art_txt">최근방문</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="current_open_tab">
+				<li>
+					<a href="#dashBoard" onclick="showTabContent(this); return false"><span class="txt">Dash Board</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#roomStatus" onclick="showTabContent(this); return false" class="active"><span class="txt">Room Status</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+			</ul>
+			<div class="btn_cot_set">
+				<button type="button" class="btn_prev"><i class="xi-angle-left-min"><b class="art_txt">이전</b></i></button>
+				<button type="button" class="btn_next"><i class="xi-angle-right-min"><b class="art_txt">다음</b></i></button>
+			</div>
+		</nav>
+		<script>
+			initCurrentOpenTabScroll(); //텝 생성 직후 실행되어야 함
+		</script>
+	</header>
+	<main id="container">
+		<article class="content" id="dashBoard">
+			<h2><span class="txt">Dash Board</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:skyblue">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="roomStatus" style="display:block;">
+			<h2><span class="txt">Room Status</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner">
+				<section class="search_result">
+					<div class="inner_search_filter room_status_sorting">
+						<table>
+							<caption>Search filter</caption>
+							<colgroup>
+								<col style="width:101px">
+								<col style="width:299px">
+								<col style="width:299px">
+								<col />
+								<col style="width:90px" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<ul class="zoom_in_out rs_filter">
+											<li><button type="button" onclick="zoomRoomStatusList('plus')"><i class="xi-plus-min"><b class="art_txt">확장</b></i></button></li>
+											<li><button type="button" onclick="zoomRoomStatusList('minus')"><i class="xi-minus-min"><b class="art_txt">축소</b></i></button></li>
+											<li><button type="button" class="active"><span class="txt">F</span></button></li>
+										</ul>
+									</td>
+									<td>
+										<ul class="clean_status rs_filter">
+											<li class="dirty"><button type="button" class="active">Dirty</button></li>
+											<li class="cleaning"><button type="button" class="active">Cleaning</button></li>
+											<li class="cleaned"><button type="button" class="active">Cleaned</button></li>
+											<li class="inspected"><button type="button">inspected</button></li>
+										</ul>
+										<div class="btn_rs_set">
+											<button class="btn_basic light"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+										</div>
+									</td>
+									<td>
+										<ul class="exp_status rs_filter">
+											<li class="exp_ci"><button type="button" class="active">Exp C/I</button></li>
+											<li class="in_house"><button type="button">In-House</button></li>
+											<li class="exp_co"><button type="button">Exp C/O</button></li>
+											<li class="ooo"><button type="button">OOO</button></li>
+										</ul>
+										<div class="btn_rs_set">
+											<button class="btn_basic light"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+										</div>
+									</td>
+									<td colspan="2" class="rm_type_wrap">
+										<div class="rm_type rs_extention_list">
+											<ul class="rs_filter">
+												<li><button type="button" class="not_move">Do Not Move</button></li>
+												<li><button type="button" class="active">STD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">STT</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+												<li><button type="button">DLX</button></li>
+												<li><button type="button">DCD</button></li>
+											</ul>
+											<div class="btn_rs_set">
+												<button class="btn_basic light btn_extention" onclick="rsExtentionList(this)"><i class="xi-caret-down-min"><b class="art_txt">확장</b></i><i class="xi-caret-up-min"><b class="art_txt">축소</b></i></button>
+												<button class="btn_basic light"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4" class="floor_wrap">
+										<div class="floor rs_extention_list">
+											<h5>Floor</h5>
+											<ul class="rs_filter">
+												<li><button type="button" class="active">1</button></li>
+												<li><button type="button">2</button></li>
+												<li><button type="button">3</button></li>
+												<li><button type="button">4</button></li>
+												<li><button type="button">5</button></li>
+												<li><button type="button">6</button></li>
+												<li><button type="button">7</button></li>
+												<li><button type="button">8</button></li>
+												<li><button type="button">9</button></li>
+												<li><button type="button">10</button></li>
+												<li><button type="button">11</button></li>
+												<li><button type="button">12</button></li>
+												<li><button type="button">13</button></li>
+												<li><button type="button">14</button></li>
+												<li><button type="button">15</button></li>
+												<li><button type="button">16</button></li>
+												<li><button type="button">17</button></li>
+												<li><button type="button">18</button></li>
+												<li><button type="button">19</button></li>
+												<li><button type="button">20</button></li>
+												<li><button type="button">1</button></li>
+												<li><button type="button">2</button></li>
+												<li><button type="button">3</button></li>
+												<li><button type="button">4</button></li>
+												<li><button type="button">5</button></li>
+												<li><button type="button">6</button></li>
+												<li><button type="button">7</button></li>
+												<li><button type="button">8</button></li>
+												<li><button type="button">9</button></li>
+												<li><button type="button">10</button></li>
+												<li><button type="button">11</button></li>
+												<li><button type="button">12</button></li>
+												<li><button type="button">13</button></li>
+												<li><button type="button">14</button></li>
+												<li><button type="button">15</button></li>
+												<li><button type="button">16</button></li>
+												<li><button type="button">17</button></li>
+												<li><button type="button">18</button></li>
+												<li><button type="button">19</button></li>
+												<li><button type="button">20</button></li>
+												<li><button type="button">21</button></li>
+												<li><button type="button">22</button></li>
+												<li><button type="button">23</button></li>
+												<li><button type="button">24</button></li>
+												<li><button type="button">25</button></li>
+												<li><button type="button">26</button></li>
+												<li><button type="button">27</button></li>
+												<li><button type="button">28</button></li>
+												<li><button type="button">29</button></li>
+												<li><button type="button">30</button></li>
+												<li><button type="button">31</button></li>
+												<li><button type="button">32</button></li>
+												<li><button type="button">33</button></li>
+												<li><button type="button">34</button></li>
+												<li><button type="button">35</button></li>
+												<li><button type="button">36</button></li>
+												<li><button type="button">37</button></li>
+												<li><button type="button">38</button></li>
+												<li><button type="button">39</button></li>
+												<li><button type="button">40</button></li>
+												<li><button type="button">41</button></li>
+												<li><button type="button">42</button></li>
+												<li><button type="button">43</button></li>
+												<li><button type="button">44</button></li>
+												<li><button type="button">45</button></li>
+												<li><button type="button">46</button></li>
+												<li><button type="button">47</button></li>
+												<li><button type="button">48</button></li>
+												<li><button type="button">49</button></li>
+												<li><button type="button">50</button></li>
+												<li><button type="button">51</button></li>
+												<li><button type="button">52</button></li>
+												<li><button type="button">53</button></li>
+												<li><button type="button">54</button></li>
+												<li><button type="button">55</button></li>
+												<li><button type="button">56</button></li>
+												<li><button type="button">57</button></li>
+												<li><button type="button">58</button></li>
+												<li><button type="button">59</button></li>
+												<li><button type="button">60</button></li>
+											</ul>
+											<div class="btn_rs_set">
+												<button class="btn_basic light btn_extention" onclick="rsExtentionList(this)"><i class="xi-caret-down-min"><b class="art_txt">확장</b></i><i class="xi-caret-up-min"><b class="art_txt">축소</b></i></button>
+												<button class="btn_basic light"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+											</div>
+										</div>
+									</td>
+									<td class="btn_f_guide">
+										<button type="button" class="btn_basic"><i class="xi-map-o"></i><span class="txt">F.Guide</span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="inner_search_detail room_status_search_detail">
+						<div class="isd_wrap">
+							<h5><a href="javascript:void(0)" onclick="innerSearchDetail(this)">Detailed Search<i class="xi-search"></i><i class="xi-angle-down-min"></i></a></h5>
+							<div class="isd_form">
+								<div class="rssd_wrap">
+									<div class="rssd_form">
+										<h6>Select Option</h6>
+										<table>
+											<caption>Detail Search Form</caption>
+											<colgroup>
+												<col style="width:90px">
+												<col>
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row">Room Equip</th>
+													<td>
+														<ul class="isd_filter">
+															<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Kitchen</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Microwave</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Living Room</span></button></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">View</th>
+													<td>
+														<ul class="isd_filter">
+															<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">River-view</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">City view</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Ocean view</span></button></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">Type</th>
+													<td>
+														<ul class="isd_filter">
+															<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Kiosk</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">VIP</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Repeat</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Comp</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">House Use</span></button></li>
+															<li><button type="button" class="btn_basic light"><span class="txt">Online C/I</span></button></li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="rssd_form">
+										<h6>Summary</h6>
+										<table>
+											<caption>Detail Search Form</caption>
+											<colgroup>
+												<col style="width:80px">
+												<col style="width:60px">
+												<col style="width:80px">
+												<col style="width:60px">
+												<col style="width:80px">
+												<col style="width:60px">
+												<col style="width:80px">
+												<col style="width:60px">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" colspan="3" style="padding-right:80px">Total Rooms - excl. OOO</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<td colspan="5">&nbsp;</td>
+												</tr>
+												<tr>
+													<th scope="row">Vacant</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Occupied</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">OOO</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">OOS</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">Dirty</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Cleaning</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Cleaned</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Inspected</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">Exp C/O</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Exp C/I</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">In-House</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">&nbsp;</th>
+													<td>
+														&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">Comp</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">House Use</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">DNM</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">&nbsp;</th>
+													<td>
+														&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">Day Use</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">Carry Over</th>
+													<td>
+														<input type="text" style="width:60px" value="20" class="al_right" readonly>
+													</td>
+													<th scope="row">&nbsp;</th>
+													<td>
+														&nbsp;
+													</td>
+													<th scope="row">&nbsp;</th>
+													<td>
+														&nbsp;
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="btn_isd_set">
+									<button class="btn_basic lg dark"><i class="xi-refresh"></i><span class="txt">Refresh</span></button>
+									<button class="btn_basic lg btn_search"><i class="xi-search"></i><span class="txt">Search</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="room_status">
+						<div class="room_list">
+							<ul>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h give">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaning">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h receive">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaned">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_ci">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="in_house">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_co">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="ooo">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+							<ul>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h give">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaning">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h receive">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaned">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_ci">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="in_house">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_co">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="ooo">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+							<ul>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h give">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaning">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h receive">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status cleaned">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_ci">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status inspected">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="in_house">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="exp_co">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)" class="ooo">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li onclick="roomStatusEditMenu(this)" ondblclick="openLayerPopup('#reservation',this)">
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="3" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row"><strong>0000</strong></th>
+												<td>STD</td>
+												<td>GO</td>
+												<td class="clean_status dirty">VI</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col style="width:75%" />
+										</colgroup>
+										<tbody>
+											<tr class="fit_group">
+												<th scope="row">VIP</th>
+												<td rowspan="4" class="rs_info">
+													<p class="vip">Jenna</p>
+													<p class="kiosk">FIT/Group</p>
+													<p class="c_h">500,000</p>
+													<p class="cp">01-01 ~ 02-02</p>
+												</td>
+											</tr>
+											<tr class="kiosk">
+												<th scope="row">Kiosk</th>
+											</tr>
+											<tr class="c_h">
+												<th scope="row">C/H</th>
+											</tr>
+											<tr class="cp">
+												<th scope="row">CP</th>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Room Status</caption>
+										<colgroup>
+											<col style="width:25%" />
+											<col span="2" />
+										</colgroup>
+										<tbody>
+											<tr class="onl">
+												<th scope="row">ONL</th>
+												<td>RQ(0)</td>
+												<td>Trace(0)</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+						</div>
+						<div class="room_edit_menu">
+							<ul>
+								<li><a href="javascript:void(0)" class="disabled">Check In</a></li>
+								<li><a href="javascript:void(0)">Check Out</a></li>
+								<li><a href="javascript:void(0)">Update</a></li>
+								<li><a href="javascript:void(0)">Room Change</a></li>
+								<li><a href="javascript:void(0)">Day Use</a></li>
+								<li><a href="javascript:void(0)">Reserve</a></li>
+								<li class="deps"><a href="javascript:void(0)">Clean Status to</a>
+									<ul>
+										<li><a href="javascript:void(0)"><span class="clean_status dirty">Dirty</span></a></li>
+										<li><a href="javascript:void(0)"><span class="clean_status cleaning">Cleaning</span></a></li>
+										<li><a href="javascript:void(0)"><span class="clean_status cleaned">Cleaned</span></a></li>
+										<li><a href="javascript:void(0)"><span class="clean_status inspected">Inspected</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<!-- Layer Popup -->
+			<div class="layer_popup" id="reservation">
+				<h2>Reservation</h2>
+				<div class="lp_content" style="width:1500px; height:700px">
+				</div>
+				<button type="button" class="lp_close" onclick="closeLayerPopup('#reservation',this)"><i></i></button>
+			</div>
+			<div class="bg_modal"></div>
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="sale">
+			<h2><span class="txt">Sale</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:yellow">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+	</main>
+	<footer id="footer">
+		<p class="copyright">Copyright (C) CODY THE MANAGER All rights reserved.</p>
+		<ul class="f_menu">
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Use terms</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Sitemap -->
+	<nav id="sitemap">
+		<ul>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi List</a></li>
+					<li><a href="javascript:void(0);">Room Inventory</a></li>
+					<li><a href="javascript:void(0);">Account Profile</a></li>
+					<li><a href="javascript:void(0);">CMS List</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-network-home"></i><span class="txt">Front</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi Front</a></li>
+					<li><a href="javascript:void(0);">Assign Status</a></li>
+					<li><a href="javascript:void(0);">Room Status</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-money"></i><span class="txt">Cashiering</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Check-Out</a></li>
+					<li><a href="javascript:void(0);">Exchange</a></li>
+					<li><a href="javascript:void(0);">Deposit List</a></li>
+					<li><a href="javascript:void(0);">Night Audit</a></li>
+					<li><a href="javascript:void(0);">A/R</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-ico-hk"></i><span class="txt">HK</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Room Status</a></li>
+					<li><a href="javascript:void(0);">Room Cleaning</a></li>
+					<li><a href="javascript:void(0);">O.O.O</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+					<li><a href="javascript:void(0);">Multi List</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Outlet</a></li>
+					<li><a href="javascript:void(0);">Menu</a></li>
+					<li><a href="javascript:void(0);">E.Reservation</a></li>
+					<li><a href="javascript:void(0);">Event List</a></li>
+					<li><a href="javascript:void(0);">E.Calendar</a></li>
+					<li><a href="javascript:void(0);">E.Monthly Table</a></li>
+					<li><a href="javascript:void(0);">E.Daily Table</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-document"></i><span class="txt">Report</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Dash Board</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Front</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Reservation </a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Sales</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Daily Report</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Ananlysis</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-cog"></i><span class="txt">Config</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">RM Setting</a></li>
+					<li><a href="javascript:void(0);">Rm Number List</a></li>
+					<li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+					<li><a href="javascript:void(0);">Service/Request</a></li>
+					<li><a href="javascript:void(0);">Calendar</a></li>
+					<li><a href="javascript:void(0);">Rate Plan</a></li>
+					<li><a href="javascript:void(0);">Package</a></li>
+					<li><a href="javascript:void(0);">Room Block</a></li>
+					<li><a href="javascript:void(0);">CMS Setting</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Room Cleaning</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-user"> </i><span class="txt">Admin</span>
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="btn_close"><i class="xi-close-min"></i><span class="txt">Close</span></button>
+	</nav>
+	<!-- //Sitemap -->
+	
+	<!-- Quick Menu  -->
+	<aside id="quick_menu">
+		<div class="qm_wrap" id="qm_bookmark">
+			<h3 class="bookmark"><span class="txt">Bookmark</span><button type="button" class="add"><i class="xi-plus-circle"><b class="art_txt">추가</b></i></button></h3>
+			<ul>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+			</ul>
+		</div>
+		<div class="qm_wrap" id="qm_recent">
+			<h3 class="recent"><span class="txt">Recent Menu</span></h3>
+			<ul>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+			</ul>
+		</div>
+		<div class="btn_log_set">
+			<button type="button" class="btn" disabled><i class="xi-book"></i><span class="txt">Log Book</span></button>
+			<button type="button" class="btn" disabled><i class="xi-log-out"></i><span class="txt">Jenna</span></button>
+		</div>
+	</aside>
+	<!-- Quick Menu -->
+</body>
+</html>

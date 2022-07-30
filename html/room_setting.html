@@ -1,0 +1,3806 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detction" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>PMS v3.5</title>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/xeicon.min.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/layout.css" />
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="../css/contents.css" />
+<!-- <link rel="stylesheet" href="../css/thema_baisc.css" /> -->
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="open_gnb"><img src="../images/logo_cody.png" alt="Cody The Manager" class="logo" /><span class="txt"><strong>PMS</strong> v.3.5</span></h1>
+		<button type="button" class="btn_sitemap"><img src="../images/btn_sitemap.png" alt="전체 메뉴" /></button>
+		<button type="button" class="btn_gnb_all"><img src="../images/btn_sitemap.png" alt="전체 메뉴" class="ico_open" /></button>
+		<nav id="gnb">
+            <ul>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi List</a></li>
+                        <li><a href="javascript:void(0);">Room Inventory</a></li>
+                        <li><a href="javascript:void(0);">Account Profile</a></li>
+                        <li><a href="javascript:void(0);">CMS List</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-network-home"></i><span class="txt">Front</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi Front</a></li>
+                        <li><a href="javascript:void(0);">Assign Status</a></li>
+                        <li><a href="javascript:void(0);">Room Status</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-money"></i><span class="txt">Cashiering</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Check-Out</a></li>
+                        <li><a href="javascript:void(0);">Exchange</a></li>
+                        <li><a href="javascript:void(0);">Deposit List</a></li>
+                        <li><a href="javascript:void(0);">Night Audit</a></li>
+                        <li><a href="javascript:void(0);">A/R</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-ico-hk"></i><span class="txt">HK</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Room Status</a></li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a></li>
+                        <li><a href="javascript:void(0);">O.O.O</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+                        <li><a href="javascript:void(0);">Multi List</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Outlet</a></li>
+                        <li><a href="javascript:void(0);">Menu</a></li>
+                        <li><a href="javascript:void(0);">E.Reservation</a></li>
+                        <li><a href="javascript:void(0);">Event List</a></li>
+                        <li><a href="javascript:void(0);">E.Calendar</a></li>
+                        <li><a href="javascript:void(0);">E.Monthly Table</a></li>
+                        <li><a href="javascript:void(0);">E.Daily Table</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-document"></i><span class="txt">Report</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Dash Board</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Front</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Reservation </a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Sales</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Daily Report</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Ananlysis</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-cog"></i><span class="txt">Config</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">RM Setting</a></li>
+                        <li><a href="javascript:void(0);">Rm Number List</a></li>
+                        <li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+                        <li><a href="javascript:void(0);">Service/Request</a></li>
+                        <li><a href="javascript:void(0);">Calendar</a></li>
+                        <li><a href="javascript:void(0);">Rate Plan</a></li>
+                        <li><a href="javascript:void(0);">Package</a></li>
+                        <li><a href="javascript:void(0);">Room Block</a></li>
+                        <li><a href="javascript:void(0);">CMS Setting</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-user"> </i><span class="txt">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<div id="g_utile">
+			<fieldset class="search_form">
+				<legend>Hotel Search</legend>
+				<p>
+					<select>
+						<option value="">Jenna hotel 01</option>
+						<option value="">Jenna hotel 02</option>
+						<option value="">Jenna hotel 03</option>
+					</select>
+					<span class="keyword_dropbox">
+						<input type="text" onkeydown="keywordDropbox(this,event)" placeholder="Enter the search word.">
+						<span class="kd_list">
+							<b><a href="javascript:void(0)">Reservation ◀ Reservation</a></b>
+							<b><a href="javascript:void(0)" class="hover">Reservation on andby ◀ Reservation ◀ Reservation ◀ E.Reservation</a></b>
+							<b><a href="javascript:void(0)">Reservation ◀ Report</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+						</span>
+					</span>
+					<button type="button"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+				</p>
+			</fieldset>
+			<ul class="user_menu">
+				<li class="user_info">
+					<button type="button"><i class="xi-profile"></i><span class="txt">Jenna</span></button>
+				</li>
+				<li class="pms_day">2022.01.01</li>
+				<li class="logout">
+					<button type="button" class="info_log"><i class="xi-log-out"><b class="art_txt">로그아웃</b></i></button>
+				</li>
+				<li class="help">
+					<button type="button" class="info_log"><i class="xi-help-o"><b class="art_txt">도움말</b></i></button>
+				</li>
+			</ul>
+		</div>
+		<nav id="g_contents_navi">
+			<ul class="btn_quick_menu">
+				<li>
+					<a href="#qm_bookmark">
+						<i class="xi-star-o open"><b class="art_txt">즐겨찾기</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+				<li>
+					<a href="#qm_recent">
+						<i class="xi-ico-history open"><b class="art_txt">최근방문</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="current_open_tab">
+				<li>
+					<a href="#dashBoard" onclick="showTabContent(this); return false"><span class="txt">Dash Board</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#roomSetting" onclick="showTabContent(this); return false" class="active"><span class="txt">Room Setting</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+			</ul>
+			<div class="btn_cot_set">
+				<button type="button" class="btn_prev"><i class="xi-angle-left-min"><b class="art_txt">이전</b></i></button>
+				<button type="button" class="btn_next"><i class="xi-angle-right-min"><b class="art_txt">다음</b></i></button>
+			</div>
+		</nav>
+		<script>
+			initCurrentOpenTabScroll(); //텝 생성 직후 실행되어야 함
+		</script>
+	</header>
+	<main id="container">
+		<article class="content" id="dashBoard">
+			<h2><span class="txt">Dash Board</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:skyblue">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="roomSetting" style="display:block;">
+			<h2><span class="txt">Room Setting</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner">
+				<section class="search_result">
+					<div class="sr_tit rt_setting">
+						<h3>Room Type Setting <span class="guide">Room code는 영문과 숫자 조합 3~4자리로 입력해 주세요.</span></h3>
+						<div class="s_edit_set">
+							<span class="check_label">Use</span>
+							<span class="write_select_set">
+								<select class="al_center" style="width:100px">
+									<option value="1">Y</option>
+									<option value="0">N</option>
+									<option value="-1">All</option>
+								</select>
+							</span>
+							<span class="btn_set">
+								<button type="button" class="btn_basic txt_btn"><span class="txt">Add</span></button>
+								<button type="button" class="btn_basic txt_btn"><span class="txt">Save</span></button>
+							</span>
+						</div>
+					</div>
+					<div class="sr_cont rt_setting">
+						<div class="scroll_table" style="height:167px">
+							<div class="st_list">
+								<table>
+									<caption>Room Type Setting</caption>
+									<colgroup>
+										<col style="width:8%" />
+										<col style="width:14%" />
+										<col style="width:18%" />
+										<col style="width:18%" />
+										<col style="width:10%" />
+										<col style="width:10%" />
+										<col style="width:10%" />
+										<col style="width:10%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">No</th>
+											<th scope="col">Rm Code</th>
+											<th scope="col">Room Name</th>
+											<th scope="col">Rack rate</th>
+											<th scope="col">Min</th>
+											<th scope="col">Max</th>
+											<th scope="col">Rms#</th>
+											<th scope="col">Use Y/N</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="3" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="4" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="5" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="6" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="7" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="8" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td class="table_txt"><input type="text" value="9" /></td>
+											<td class="table_txt"><input type="text" value="STD" /></td>
+											<td class="table_txt"><input type="text" value="Standard Double" /></td>
+											<td class="table_txt"><input type="text" class="al_right" value="300,000" /></td>
+											<td class="table_txt"><input type="text" value="1" /></td>
+											<td class="table_txt"><input type="text" value="2" /></td>
+											<td class="table_txt"><input type="text" value="20" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="st_total">
+								<table>
+									<caption>Table Foot</caption>
+									<tbody>
+										<tr>
+											<td class="al_left" colspan="4">Total counts: 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="sr_tit">
+						<h3>Room Number Setting</h3>
+					</div>
+					<div class="sr_cont">
+						<div class="sr_cont_tit">
+							<h4>Batch Update <span class="guide">하단 그리드 체크박스에 체크한 뒤 [Select Input] 버튼을 클릭하면 선택한 데이터가 체크된 그리드에 입력됩니다.</span></h4>
+						</div>
+						<div class="inner_search_filter">
+							<table>
+								<caption>Search filter</caption>
+								<colgroup>
+									<col />
+									<col style="width:284px" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<ul class="write_form">
+												<li>
+													<span class="category">Floor</span>
+													<span class="field">
+														<select>
+															<option value="">100</option>
+														</select>
+														<button type="button" class="btn_basic"><span class="txt">Select Input</span></button>
+													</span>
+												</li>
+												<li>
+													<span class="category">View</span>
+													<span class="field">
+														<select>
+															<option value="">Ocean view</option>
+														</select>
+														<button type="button" class="btn_basic"><span class="txt">Select Input</span></button>
+													</span>
+												</li>
+												<li>
+													<span class="category">Equip</span>
+													<span class="field">
+														<span class="multi_select" style="width:203px">
+															<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+																<span class="value">Living room, Kitchen, Microwave</span>
+															</button>
+															<span class="ms_list_wrap">
+																<span class="ms_list">
+																	<label><input type="checkbox" checked />Living room</label>
+																	<label><input type="checkbox" checked />Kitchen</label>
+																	<label><input type="checkbox" checked />Microwave</label>
+																	<label><input type="checkbox" />Test1</label>
+																	<label><input type="checkbox" />Test2</label>
+																	<label><input type="checkbox" />Test3</label>
+																</span>
+																<span class="btn_set">
+																	<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+																	<button type="button" class="btn_basic btn_apply">Apply</button>
+																</span>
+															</span>
+														</span>
+														<button type="button" class="btn_basic"><span class="txt">Select Input</span></button>
+													</span>
+												</li>
+												<li>
+													<span class="category">Use</span>
+													<span class="field">
+														<select class="al_center" style="width:100px">
+															<option value="">Y</option>
+															<option value="">N</option>
+														</select>
+														<button type="button" class="btn_basic"><span class="txt">Select Input</span></button>
+													</span>
+												</li>
+											</ul>
+										</td>
+										<td class="btn_isf_set">
+											<button type="button" class="btn_basic md btn_isf" onclick="openLayerPopup('#ratePlanSetting',this)"><span class="txt">Equip Creation</span></button>
+											<button type="button" class="btn_basic md btn_isf"><span class="txt">View Creation</span></button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="inner_search_detail">
+							<div class="isd_wrap">
+								<h5><a href="javascript:void(0)" onclick="innerSearchDetail(this)">Detailed Search<i class="xi-search"></i><i class="xi-angle-down-min"></i></a></h5>
+								<div class="isd_form">
+									<table>
+										<caption>Detail Search Form</caption>
+										<colgroup>
+											<col style="width:90px" />
+											<col />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">Floor</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">1</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">2</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">3</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">4</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Room Type</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">STD</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">STT</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">View</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Ocean View</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">River View</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Equipment</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Living Room</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Kitchen</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Use</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">All</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Yes</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">No</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Sort</th>
+												<td>
+													<div class="check_radio_list">
+														<ul>
+															<li><label><input type="radio" />Room Number</label></li>
+															<li><label><input type="radio" />Room Code</label></li>
+															<li><label><input type="radio" />Use</label></li>
+															<li><label><input type="radio" />View</label></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="btn_isd_set">
+										<button class="btn_basic lg dark"><i class="xi-refresh"></i><span class="txt">Refresh</span></button>
+										<button class="btn_basic lg btn_search"><i class="xi-search"></i><span class="txt">Search</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sr_cont_tit">
+							<h4>Single Update <span class="guide">그리드에서 직접 변경한 뒤 SAVE 버튼으로 저장해 주세요.</span></h4>
+							<div class="s_edit_set">
+								<span class="check_label">Use</span>
+								<span class="write_select_set">
+									<select class="al_center" style="width:100px">
+										<option value="1">Y</option>
+										<option value="0">N</option>
+										<option value="-1">All</option>
+									</select>
+								</span>
+								<span class="btn_set">
+									<button type="button" class="btn_basic light ico_btn btn_expansion reverse" onclick="expensionTable('#room_type_setting',this)"><i class="xi-arrows-v off"><b class="art_txt">확대</b></i><i class="xi-long-arrow-down on"><b class="art_txt">축소</b></i></button>
+									<button type="button" class="btn_basic txt_btn"><span class="txt">Form Download</span></button>
+									<button type="button" class="btn_basic txt_btn"><span class="txt">Upload</span></button>
+									<button type="button" class="btn_basic txt_btn"><span class="txt">Add</span></button>
+									<button type="button" class="btn_basic txt_btn"><span class="txt">Save</span></button>
+								</span>
+							</div>
+						</div>
+						<div class="scroll_table" style="height:364px" id="room_type_setting" data-org-height="364" data-exp-height="570">
+							<!--<div class="st_list">
+								<dl>
+									<dt>
+										<ul>
+											<li style="width:40px" class="check_radio"><input type="checkbox" /></li>
+											<li style="width:120px"><span class="txt">Floor</span></li>
+											<li style="width:120px"><span class="txt">Room #</span></li>
+											<li style="width:180px"><span class="txt">Rm Code</span></li>
+											<li style="width:260px"><span class="txt">Room Name</span></li>
+											<li style="width:260px"><span class="txt">View</span></li>
+											<li style="width:650px"><span class="txt">Equip</span></li>
+											<li style="width:120px"><span class="txt">Use Y/N</span></li>
+											<li style="width:120px"><span class="txt">Del</span></li>
+										</ul>
+									</dt>
+									<dd>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</li>
+											<li style="width:120px "class="table_txt">
+												<input type="text" value="1001" />
+											</li>
+											<li style="width:180px" class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</li>
+											<li style="width:260px" class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</li>
+											<li style="width:650px" class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked="">Living room</label>
+															<label><input type="checkbox" checked="">Kitchen</label>
+															<label><input type="checkbox" checked="">Microwave</label>
+															<label><input type="checkbox">Test1</label>
+															<label><input type="checkbox">Test2</label>
+															<label><input type="checkbox">Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</li>
+											<li style="width:120px" class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</li>
+											<li style="width:120px"><span class="txt"><button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button></span></li>
+										</ul>
+									</dl>
+								</dt>
+							</div>-->
+							
+							<div class="st_list">
+								<table>
+									<caption>Room Type Setting</caption>
+									<colgroup>
+										<col style="width:2%" />
+										<col style="width:6%" />
+										<col style="width:6%" />
+										<col style="width:9%" />
+										<col style="width:13%" />
+										<col style="width:13%" />
+										<col style="width:33%" />
+										<col style="width:6%" />
+										<col style="width:6%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="check_radio"><input type="checkbox" /></th>
+											<th scope="col">Floor</th>
+											<th scope="col">Room #</th>
+											<th scope="col">Rm Code</th>
+											<th scope="col">Room Name</th>
+											<th scope="col">View</th>
+											<th scope="col">Equip</th>
+											<th scope="col">Use Y/N</th>
+											<th scope="col">Del</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr onclick="alert('텍스트필드&셀렉트박스를 선택할 떄도 문제가 됨')">
+											<td class="check_radio"><input type="checkbox" checked="" /></td>
+											<td class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="1001" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="" selected>2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="2002" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="" selected>3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="3003" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="" selected>4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="4004" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="" selected>5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="5005" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" checked="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="" selected>2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="" selected>3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="" selected>4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="" selected>5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" checked="" /></td>
+											<td class="table_select">
+												<select>
+													<option value="" selected>1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="1001" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="" selected>2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="2002" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="" selected>3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="3003" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="" selected>4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="4004" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr>
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="" selected>5</option>
+												</select>
+											</td>
+											<td class="table_txt"><input type="text" value="5005" /></td>
+											<td class="table_select">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" checked="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="" selected>2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="" selected>3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="" selected>4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+										<tr class="point">
+											<td class="check_radio"><input type="checkbox" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="" selected>5</option>
+												</select>
+											</td>
+											<td class="table_txt point"><input type="text" value="" /></td>
+											<td class="table_select point">
+												<select>
+													<option value="">STD</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Standard Double</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option>
+													<option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option><option value="">Ocean view</option>
+												</select>
+											</td>
+											<td class="table_select point">
+												<span class="multi_select">
+													<button type="button" class="btn_ms" onclick="multiSelectBoxUI(this); event.stopPropagation()">
+														<span class="value">Living room, Kitchen, Microwave</span>
+													</button>
+													<span class="ms_list_wrap">
+														<span class="ms_list">
+															<label><input type="checkbox" checked />Living room</label>
+															<label><input type="checkbox" checked />Kitchen</label>
+															<label><input type="checkbox" checked />Microwave</label>
+															<label><input type="checkbox" />Test1</label>
+															<label><input type="checkbox" />Test2</label>
+															<label><input type="checkbox" />Test3</label>
+														</span>
+														<span class="btn_set">
+															<button type="button" class="btn_basic dark btn_cancel">Cancel</button>
+															<button type="button" class="btn_basic btn_apply">Apply</button>
+														</span>
+													</span>
+												</span>
+											</td>
+											<td class="table_select point">
+												<select>
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</td>
+											<td>
+												<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="st_total">
+								<table>
+									<caption>Table Foot</caption>
+									<tbody>
+										<tr>
+											<td class="al_left" colspan="4">Total counts: 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<!--  Layer Calendar -->
+			<div class="layer_calendar" style="top:265px; left:115px">
+				<div class="btn_lc_move">
+					<button type="button" class="prev"><i></i></button>
+					<button type="button" class="next"><i></i></button>
+				</div>
+				
+				<!-- Wrap Block -->
+				<div class="lc_wrap">
+					<h3>2021.12</h3>
+					<div class="lc_cont">
+						<table>
+							<caption>Calendar</caption>
+							<thead>
+								<tr>
+									<th scope="col" class="sun">Sun</th>
+									<th scope="col">Mon</th>
+									<th scope="col">Tue</th>
+									<th scope="col">Wed</th>
+									<th scope="col">Thu</th>
+									<th scope="col">Fri</th>
+									<th scope="col" class="sat">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><button type="button" disabled>28</button></td>
+									<td><button type="button" disabled>29</button></td>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" disabled>5</button></td>
+									<td class="today"><button type="button">6</button></td>
+									<td><button type="button">7</button></td>
+									<td><button type="button">8</button></td>
+									<td><button type="button">9</button></td>
+									<td><button type="button">10</button></td>
+									<td><button type="button">11</button></td>
+								</tr>
+								<tr>
+									<td class="hover"><button type="button">12</button></td>
+									<td><button type="button">13</button></td>
+									<td class="flag"><button type="button">14</button></td>
+									<td class="range"><button type="button">15</button></td>
+									<td class="range"><button type="button">16</button></td>
+									<td class="range"><button type="button">17</button></td>
+									<td class="range"><button type="button">18</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">19</button></td>
+									<td class="range"><button type="button">20</button></td>
+									<td class="range"><button type="button">21</button></td>
+									<td class="range"><button type="button">22</button></td>
+									<td class="range"><button type="button">23</button></td>
+									<td class="range"><button type="button">24</button></td>
+									<td class="range"><button type="button">25</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">26</button></td>
+									<td class="range"><button type="button">27</button></td>
+									<td class="range"><button type="button">28</button></td>
+									<td class="range"><button type="button">29</button></td>
+									<td class="range"><button type="button">30</button></td>
+									<td class="range"><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Wrap Block -->
+				
+				<!-- Wrap Block -->
+				<div class="lc_wrap">
+					<h3>2022.12</h3>
+					<div class="lc_cont">
+						<table>
+							<caption>Calendar</caption>
+							<colgroup>
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="sun">Sun</th>
+									<th scope="col">Mon</th>
+									<th scope="col">Tue</th>
+									<th scope="col">Wed</th>
+									<th scope="col">Thu</th>
+									<th scope="col">Fri</th>
+									<th scope="col" class="sat">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><button type="button" disabled>26</button></td>
+									<td><button type="button" disabled>27</button></td>
+									<td><button type="button" disabled>28</button></td>
+									<td><button type="button" disabled>29</button></td>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>31</button></td>
+									<td class="range"><button type="button">1</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">2</button></td>
+									<td class="range"><button type="button">3</button></td>
+									<td class="range"><button type="button">4</button></td>
+									<td class="range"><button type="button">5</button></td>
+									<td class="range"><button type="button">6</button></td>
+									<td class="range"><button type="button">7</button></td>
+									<td class="range"><button type="button">8</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">9</button></td>
+									<td class="range"><button type="button">10</button></td>
+									<td class="hover range"><button type="button">11</button></td>
+									<td><button type="button">12</button></td>
+									<td><button type="button">13</button></td>
+									<td><button type="button">14</button></td>
+									<td><button type="button">15</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">16</button></td>
+									<td><button type="button">17</button></td>
+									<td><button type="button">18</button></td>
+									<td><button type="button">19</button></td>
+									<td><button type="button">20</button></td>
+									<td><button type="button">21</button></td>
+									<td><button type="button">22</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">23</button></td>
+									<td><button type="button">24</button></td>
+									<td><button type="button">25</button></td>
+									<td><button type="button">26</button></td>
+									<td><button type="button">27</button></td>
+									<td><button type="button">28</button></td>
+									<td><button type="button">29</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">30</button></td>
+									<td><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+									<td><button type="button" disabled>5</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Wrap Block -->
+				
+				<button type="button" class="lc_close"><i></i></button>
+			</div>
+			<!--  //Layer Calendar -->
+			
+			<!-- Layer Popup -->
+			<div class="layer_popup" id="ratePlanSetting">
+				<h2>Rate Plan Setting</h2>
+				<div class="lp_content rate_plan_setting">
+					<section class="search_filter plan_setting">
+						<div class="sf_form">
+							<table>
+								<caption>Search Filter Form</caption>
+								<colgroup>
+									<col style="width:80px" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Plan Code</th>
+										<td>
+											<div class="write_field_set" style="width:232px">
+												<input type="text" /> <span style="opacity:0.4; line-height:24px">(알파벳,숫자 1~5자리)</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Plan Name</th>
+										<td>
+											<div class="write_field_set">
+												<input type="text" value="Breakfast Package" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Date</th>
+										<td>
+											<div class="write_field_set" style="width:250px">
+												<span class="datepicker"><input type="text" value="2021-12-14"><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+												<span class="date_term">~</span>
+												<span class="datepicker"><input type="text" value="2021-12-14"><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Account</th>
+										<td>
+											<div class="write_field_set">
+												<span class="keyword_dropbox">
+													<input type="text" onkeydown="keywordDropbox(this,event)" />
+													<span class="kd_list">
+														<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+														<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+													</span>
+												</span>
+												<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">&nbsp;</th>
+										<td>	
+											<div class="scroll_table">
+											<div class="st_list">
+												<table>
+													<caption>Room Type Setting</caption>
+													<colgroup>
+														<col style="width:264px" />
+														<col />
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">Account</th>
+															<th scope="col">Del</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="al_left">
+																CODY
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																ASML
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																SAMSUNG
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																LG
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																HYNIX
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																CODY
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																ASML
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																SAMSUNG
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																LG
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+														<tr>
+															<td class="al_left">
+																HYNIX
+															</td>
+															<td>
+																<button class="btn_delete"><img src="../images/btn_td_delete.png" alt="삭제" /></button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="st_total">
+												<table>
+													<caption>Table Foot</caption>
+													<tbody>
+														<tr>
+															<td class="al_left" colspan="4">Total counts: 3</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+											
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Memo</th>
+										<td>
+											<div class="write_field_set">
+												<textarea name="" id="" cols="30" rows="10" style="height:110px"></textarea>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Use Y/N</th>
+										<td>
+											<div class="write_field_set">
+												<select name="" id="" class="al_center" style="width:110px;">
+													<option value="">Y</option>
+													<option value="">N</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn_sf_set">
+							<button type="button" class="btn_basic md dark"><i class="xi-pen"></i><span class="txt">New</span></button>
+							<button type="button" class="btn_basic md"><i class="xi-save"></i><span class="txt">Save</span></button>
+						</div>
+					</section>
+					<section class="search_filter daily_setting disabled">
+						<h3>Daily Rate Setting<button class="btn_basic" style="margin-left:10px"><span class="txt">Details</span></button></h3>
+						<div class="sf_form">
+							<table>
+								<caption>Search Filter Form</caption>
+								<colgroup>
+									<col style="width:80px" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Date</th>
+										<td>
+											<div class="write_field_set" style="width:250px">
+												<span class="datepicker"><input type="text" value="2021-12-14"><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+												<span class="date_term">~</span>
+												<span class="datepicker"><input type="text" value="2021-12-14"><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Week</th>
+										<td>
+											<div class="write_field_set day_select">
+												<button type="button" class="btn_basic light"><span class="txt">All</span></button>
+												<button type="button" class="btn_basic"><span class="txt">Sun</span></button>
+												<button type="button" class="btn_basic"><span class="txt">Mon</span></button>
+												<button type="button" class="btn_basic"><span class="txt">Tue</span></button>
+												<button type="button" class="btn_basic"><span class="txt">Wed</span></button>
+												<button type="button" class="btn_basic light"><span class="txt">Thu</span></button>
+												<button type="button" class="btn_basic light"><span class="txt">Fri</span></button>
+												<button type="button" class="btn_basic light"><span class="txt">Sat</span></button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><span class="rq">*</span>Rate</th>
+										<td>
+											<div class="scroll_table" style="width:386px; height:219px">
+												<div class="st_list">
+													<table>
+														<caption>Room Type List</caption>
+														<colgroup>
+															<col style="width:10%">
+															<col style="width:37%">
+															<col style="width:50%">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" class="check_radio"><input type="checkbox"></th>
+																<th scope="col">Rm Type</th>
+																<th scope="col">Rate</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>STD</td>
+																<td class="table_txt"><input type="text" class="al_right" value="500,000" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>STT</td>
+																<td class="table_txt"><input type="text" class="al_right" value="500,000" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>DLX</td>
+																<td class="table_txt"><input type="text" class="al_right" value="500,000" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>SUT</td>
+																<td class="table_txt"><input type="text" class="al_right" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>SIT</td>
+																<td class="table_txt"><input type="text" class="al_right" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>FAM</td>
+																<td class="table_txt"><input type="text" class="al_right" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>AAA</td>
+																<td class="table_txt"><input type="text" class="al_right" /></td>
+															</tr>
+															<tr>
+																<td class="check_radio"><input type="checkbox" checked=""></td>
+																<td>BBB</td>
+																<td class="table_txt"><input type="text" class="al_right" /></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<p class="guide">체크박스에 체크한 항목만 저장됩니다.</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">&nbsp;</th>
+										<td class="btn_add">
+											<button type="button" class="btn_basic">Add</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">Service Item</th>
+										<td>
+											<div class="scroll_table" style="height:96px">
+												<div class="st_list">
+													<table>
+														<caption>Room Type List</caption>
+														<colgroup>
+															<col style="width:20%">
+															<col style="width:20%">
+															<col style="width:20%">
+															<col style="width:20%">
+															<col style="width:20%">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">Item</th>
+																<th scope="col">Price</th>
+																<th scope="col">Qty</th>
+																<th scope="col">Toal</th>
+																<th scope="col">Del</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td colspan="5">입력된 데이터가 없습니다.</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn_sf_set">
+							<button type="button" class="btn_basic md"><i class="xi-save"></i><span class="txt">Save</span></button>
+						</div>
+					</section>
+				</div>
+				<button type="button" class="lp_close" onclick="closeLayerPopup('#ratePlanSetting',this)"><i></i></button>
+			</div>
+			<div class="bg_modal"></div>
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="sale">
+			<h2><span class="txt">Sale</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:yellow">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+	</main>
+	<footer id="footer">
+		<p class="copyright">Copyright (C) CODY THE MANAGER All rights reserved.</p>
+		<ul class="f_menu">
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Use terms</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Sitemap -->
+	<nav id="sitemap">
+		<ul>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi List</a></li>
+					<li><a href="javascript:void(0);">Room Inventory</a></li>
+					<li><a href="javascript:void(0);">Account Profile</a></li>
+					<li><a href="javascript:void(0);">CMS List</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-network-home"></i><span class="txt">Front</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi Front</a></li>
+					<li><a href="javascript:void(0);">Assign Status</a></li>
+					<li><a href="javascript:void(0);">Room Status</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-money"></i><span class="txt">Cashiering</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Check-Out</a></li>
+					<li><a href="javascript:void(0);">Exchange</a></li>
+					<li><a href="javascript:void(0);">Deposit List</a></li>
+					<li><a href="javascript:void(0);">Night Audit</a></li>
+					<li><a href="javascript:void(0);">A/R</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-ico-hk"></i><span class="txt">HK</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Room Status</a></li>
+					<li><a href="javascript:void(0);">Room Cleaning</a></li>
+					<li><a href="javascript:void(0);">O.O.O</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+					<li><a href="javascript:void(0);">Multi List</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Outlet</a></li>
+					<li><a href="javascript:void(0);">Menu</a></li>
+					<li><a href="javascript:void(0);">E.Reservation</a></li>
+					<li><a href="javascript:void(0);">Event List</a></li>
+					<li><a href="javascript:void(0);">E.Calendar</a></li>
+					<li><a href="javascript:void(0);">E.Monthly Table</a></li>
+					<li><a href="javascript:void(0);">E.Daily Table</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-document"></i><span class="txt">Report</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Dash Board</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Front</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Reservation </a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Sales</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Daily Report</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Ananlysis</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-cog"></i><span class="txt">Config</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">RM Setting</a></li>
+					<li><a href="javascript:void(0);">Rm Number List</a></li>
+					<li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+					<li><a href="javascript:void(0);">Service/Request</a></li>
+					<li><a href="javascript:void(0);">Calendar</a></li>
+					<li><a href="javascript:void(0);">Rate Plan</a></li>
+					<li><a href="javascript:void(0);">Package</a></li>
+					<li><a href="javascript:void(0);">Room Block</a></li>
+					<li><a href="javascript:void(0);">CMS Setting</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Room Cleaning</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-user"> </i><span class="txt">Admin</span>
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="btn_close"><i class="xi-close-min"></i><span class="txt">Close</span></button>
+	</nav>
+	<!-- //Sitemap -->
+	
+	<!-- Quick Menu  -->
+	<aside id="quick_menu">
+		<div class="qm_wrap" id="qm_bookmark">
+			<h3 class="bookmark"><span class="txt">Bookmark</span><button type="button" class="add"><i class="xi-plus-circle"><b class="art_txt">추가</b></i></button></h3>
+			<ul>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+			</ul>
+		</div>
+		<div class="qm_wrap" id="qm_recent">
+			<h3 class="recent"><span class="txt">Recent Menu</span></h3>
+			<ul>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+			</ul>
+		</div>
+		<div class="btn_log_set">
+			<button type="button" class="btn" disabled><i class="xi-book"></i><span class="txt">Log Book</span></button>
+			<button type="button" class="btn" disabled><i class="xi-log-out"></i><span class="txt">Jenna</span></button>
+		</div>
+	</aside>
+	<!-- Quick Menu -->
+</body>
+</html>

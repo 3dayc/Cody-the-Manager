@@ -1,0 +1,3048 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detction" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>PMS v3.5</title>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/xeicon.min.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/layout.css" />
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="../css/contents.css" />
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="open_gnb"><img src="../images/logo_cody.png" alt="Cody The Manager" class="logo" /><span class="txt"><strong>PMS</strong> v.3.5</span></h1>
+		<button type="button" class="btn_sitemap"><img src="../images/btn_sitemap.png" alt="전체 메뉴" /></button>
+		<button type="button" class="btn_gnb_all"><img src="../images/btn_sitemap.png" alt="전체 메뉴" class="ico_open" /></button>
+		<nav id="gnb">
+            <ul>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi List</a></li>
+                        <li><a href="javascript:void(0);">Room Inventory</a></li>
+                        <li><a href="javascript:void(0);">Account Profile</a></li>
+                        <li><a href="javascript:void(0);">CMS List</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-network-home"></i><span class="txt">Front</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi Front</a></li>
+                        <li><a href="javascript:void(0);">Assign Status</a></li>
+                        <li><a href="javascript:void(0);">Room Status</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-money"></i><span class="txt">Cashiering</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Check-Out</a></li>
+                        <li><a href="javascript:void(0);">Exchange</a></li>
+                        <li><a href="javascript:void(0);">Deposit List</a></li>
+                        <li><a href="javascript:void(0);">Night Audit</a></li>
+                        <li><a href="javascript:void(0);">A/R</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-ico-hk"></i><span class="txt">HK</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Room Status</a></li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a></li>
+                        <li><a href="javascript:void(0);">O.O.O</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+                        <li><a href="javascript:void(0);">Multi List</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Outlet</a></li>
+                        <li><a href="javascript:void(0);">Menu</a></li>
+                        <li><a href="javascript:void(0);">E.Reservation</a></li>
+                        <li><a href="javascript:void(0);">Event List</a></li>
+                        <li><a href="javascript:void(0);">E.Calendar</a></li>
+                        <li><a href="javascript:void(0);">E.Monthly Table</a></li>
+                        <li><a href="javascript:void(0);">E.Daily Table</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-document"></i><span class="txt">Report</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Dash Board</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Front</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Reservation </a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Sales</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Daily Report</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Ananlysis</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-cog"></i><span class="txt">Config</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">RM Setting</a></li>
+                        <li><a href="javascript:void(0);">Rm Number List</a></li>
+                        <li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+                        <li><a href="javascript:void(0);">Service/Request</a></li>
+                        <li><a href="javascript:void(0);">Calendar</a></li>
+                        <li><a href="javascript:void(0);">Rate Plan</a></li>
+                        <li><a href="javascript:void(0);">Package</a></li>
+                        <li><a href="javascript:void(0);">Room Block</a></li>
+                        <li><a href="javascript:void(0);">CMS Setting</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-user"> </i><span class="txt">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<div id="g_utile">
+			<fieldset class="search_form">
+				<legend>Hotel Search</legend>
+				<p>
+					<select>
+						<option value="">Jenna hotel 01</option>
+						<option value="">Jenna hotel 02</option>
+						<option value="">Jenna hotel 03</option>
+					</select>
+					<span class="keyword_dropbox">
+						<input type="text" onkeydown="keywordDropbox(this,event)" placeholder="Enter the search word.">
+						<span class="kd_list">
+							<b><a href="javascript:void(0)">Reservation ◀ Reservation</a></b>
+							<b><a href="javascript:void(0)" class="hover">Reservation on andby ◀ Reservation ◀ Reservation ◀ E.Reservation</a></b>
+							<b><a href="javascript:void(0)">Reservation ◀ Report</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+						</span>
+					</span>
+					<button type="button"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+				</p>
+			</fieldset>
+			<ul class="user_menu">
+				<li class="user_info">
+					<button type="button"><i class="xi-profile"></i><span class="txt">Jenna</span></button>
+				</li>
+				<li class="pms_day">2022.01.01</li>
+				<li class="logout">
+					<button type="button" class="info_log"><i class="xi-log-out"><b class="art_txt">로그아웃</b></i></button>
+				</li>
+				<li class="help">
+					<button type="button" class="info_log"><i class="xi-help-o"><b class="art_txt">도움말</b></i></button>
+				</li>
+			</ul>
+		</div>
+		<nav id="g_contents_navi">
+			<ul class="btn_quick_menu">
+				<li>
+					<a href="#qm_bookmark">
+						<i class="xi-star-o open"><b class="art_txt">즐겨찾기</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+				<li>
+					<a href="#qm_recent">
+						<i class="xi-ico-history open"><b class="art_txt">최근방문</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="current_open_tab">
+				<li>
+					<a href="#dashBoard" onclick="showTabContent(this); return false"><span class="txt">Dash Board</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#multiList" onclick="showTabContent(this); return false" class="active"><span class="txt">Multi List</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+			</ul>
+			<div class="btn_cot_set">
+				<button type="button" class="btn_prev"><i class="xi-angle-left-min"><b class="art_txt">이전</b></i></button>
+				<button type="button" class="btn_next"><i class="xi-angle-right-min"><b class="art_txt">다음</b></i></button>
+			</div>
+		</nav>
+		<script>
+			initCurrentOpenTabScroll(); //텝 생성 직후 실행되어야 함
+		</script>
+	</header>
+	<main id="container">
+		<article class="content" id="dashBoard">
+			<h2><span class="txt">Dash Board</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:skyblue">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="multiList" style="display:block;">
+			<h2><span class="txt">Multi List</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner">
+				<section class="search_result">
+					<div class="inner_tabnavi" data-inner-tabnavi="multi_list">
+						<ul>
+							<li><a href="#ml_all" class="active">All</a></li>
+							<li><a href="#ml_reservation">Reservation</a></li>
+							<li><a href="#ml_exp_ci">Exp C/I</a></li>
+							<li><a href="#ml_actual_ci">Actual C/I</a></li>
+							<li><a href="#ml_in_house">In-House</a></li>
+							<li><a href="#ml_exp_co">Exp C/O</a></li>
+							<li><a href="#ml_actual_co">Actual C/O</a></li>
+						</ul>
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_all" style="display:block">
+						<div class="inner_search_filter">
+							<table>
+								<caption>Search filter</caption>
+								<colgroup>
+									<col />
+									<col style="width:606px" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<td>
+											<ul class="write_form">
+												<li><span class="category">RSVN #</span><span class="field"><input type="text" style="width:110px" placeholder="PMS or OTA #" /></span></li>
+												<li><span class="category">Room #</span><span class="field"><input type="text" style="width:110px" /></span></li>
+												<li><span class="category">Name</span><span class="field"><input type="text" style="width:163px;" /></span></li>
+												<li><span class="category">Tel/Mobile #</span><span class="field"><input type="text" style="width:110px" /></span></li>
+												<li><span class="category">Group Name</span><span class="field"><input type="text" style="width:110px" /></span></li>
+												<li><span class="category">Group ID</span><span class="field"><input type="text" style="width:110px" /></span></li>
+											</ul>
+											<div class="btn_search">
+												<button type="button" class="btn_basic dark"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+												<button type="button" class="btn_basic"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+											</div>
+										</td>
+										<td rowspan="2" class="btn_isf_set">
+											<button type="button" class="btn_basic md btn_isf"><i></i><span class="txt">House Account</span></button>
+											<button type="button" class="btn_basic md btn_isf" onclick="openLayerPopup('#roomAssign',this)"><img src="../images/ico_room.png" alt="" class="ico" /><span class="txt">Room Assign</span></button>
+											<button type="button" class="btn_basic md btn_isf"><i></i><span class="txt">Party</span></button>
+											<button type="button" class="btn_basic md btn_isf"><i></i><span class="txt">Decrypt</span></button>
+											<select>
+												<option value="RSV" group-id="RVST" locale-code="CODE_RESERVATION_STATUS_RSV" locale-prop="text">Reservation</option>
+												<option value="RCK" group-id="RVST" locale-code="CODE_RESERVATION_STATUS_RCK" locale-prop="text">Re-check</option>
+												<option value="WAT" group-id="RVST" locale-code="CODE_RESERVATION_STATUS_WAT" locale-prop="text">Waiting</option>
+												<option value="NOS" group-id="RVST" locale-code="CODE_RESERVATION_STATUS_NOS" locale-prop="text">No-Show</option>
+												<option value="CNL" group-id="RVST" locale-code="CODE_RESERVATION_STATUS_CNL" locale-prop="text">Cancel</option>
+											</select>
+											<button type="button" class="btn_basic light"><i></i><span class="txt">Change</span></button>
+											<button type="button" class="btn_basic btn_isf"><i></i><span class="txt">Reg.Card</span></button>
+											<button type="button" class="btn_basic btn_isf"><i></i><span class="txt">Download</span></button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h6>Summary</h6>
+											<ul class="write_form">
+												<li><span class="category">Room #</span><span class="field"><input type="text" class="al_center" value="0000" style="width:46px" disabled /></span></li>
+												<li><span class="category">Room Night</span><span class="field"><input type="text" class="al_center" value="0000" style="width:46px" disabled /></span></li>
+												<li><span class="category">Adult/Child</span><span class="field"><input type="text" class="al_center" value="8888" style="width:44px" disabled /> / <input type="text" class="al_center" value="0000" style="width:44px" disabled /></span></li>
+												<li><span class="category">ADR</span><span class="field"><input type="text" value="700,000" style="width:90px" disabled /></span></li>
+												<li><span class="category">Room Revenue</span><span class="field"><input type="text" class="al_right" style="width:92px" value="700,000" disabled /></span></li>
+												<li><span class="category">Other Revenue</span><span class="field"><input type="text" class="al_right" style="width:92px" value="4,200,000" disabled /></span></li>
+												<li><span class="category">Total Amount</span><span class="field"><input type="text" class="al_right" style="width:92px" value="4,200,000" disabled /></span></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="inner_search_detail">
+							<div class="isd_wrap">
+								<h5><a href="javascript:void(0)" onclick="innerSearchDetail(this)">Detailed Search<i class="xi-search"></i><i class="xi-angle-down-min"></i></a></h5>
+								<div class="isd_form">
+									<table>
+										<caption>Detail Search Form</caption>
+										<colgroup>
+											<col style="width:90px" />
+											<col />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">Status</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">Reservation</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">RCancel</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">RNo-show</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">RRe-confirm</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">RWaiting</span></button></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Step</th>
+												<td>
+													<ul class="isd_filter">
+														<li><button type="button" class="btn_basic"><span class="txt">Reservation</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">In-house</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Checked out</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">Holding C/O</span></button></li>
+														<li><button type="button" class="btn_basic light"><span class="txt">H/A</span></button></li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table>
+										<caption>Detail Search Form</caption>
+										<colgroup>
+											<col style="width:90px" />
+											<col style="width:280px" />
+											<col style="width:90px" />
+											<col style="width:170px" />
+											<col style="width:90px" />
+											<col style="width:184px" />
+											<col style="width:90px" />
+											<col style="width:320px" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">Arr. Date</th>
+												<td>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+													<span class="date_term" style="width:10px">~</span>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+												</td>
+												<th scope="row">Rm Block</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">Account</th>
+												<td>
+													<span class="keyword_dropbox" style="width:140px">
+														<input type="text" onkeydown="keywordDropbox(this,event)">
+														<span class="kd_list">
+															<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+														</span>
+													</span>
+													<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+												</td>
+												<th scope="row">Visit</th>
+												<td>
+													<input type="text" placeholder="counts" />
+													<span class="btn_gauge_number">
+														<button type="button"><i class="xi-caret-up-min"><b class="art_txt">+</b></i></button>
+														<button type="button"><i class="xi-caret-down-min"><b class="art_txt">-</b></i></button>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Dep. Date</th>
+												<td>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+													<span class="date_term" style="width:10px">~</span>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+												</td>
+												<th scope="row">Room Type</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">Nationality</th>
+												<td>
+													<span class="keyword_dropbox" style="width:140px">
+														<input type="text" onkeydown="keywordDropbox(this,event)">
+														<span class="kd_list">
+															<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+														</span>
+													</span>
+													<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+												</td>
+												<th scope="row" rowspan="4">Option</th>
+												<td rowspan="4">
+													<div class="check_radio_list">
+														<ul>
+															<li><label><input type="radio" name="afg" />All</label></li>
+															<li><label><input type="radio" name="afg" />FIT</label></li>
+															<li><label><input type="radio" name="afg" />Group</label></li>
+															<li style="padding-left:15px"><label><input type="checkbox" />Deposit</label></li>
+														</ul>
+														<ul>
+															<li><label><input type="radio" name="ach" />All</label></li>
+															<li><label><input type="radio" name="ach" />Comp</label></li>
+															<li><label><input type="radio" name="ach" />House Use</label></li>
+														</ul>
+														<ul>
+															<li><label><input type="radio" name="avb" />All</label></li>
+															<li><label><input type="radio" name="avb" />VIP</label></li>
+															<li><label><input type="radio" name="avb" />Black List</label></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Stay Date</th>
+												<td>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+													<span class="date_term" style="width:10px">~</span>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+												</td>
+												<th scope="row">Package</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">Sales person</th>
+												<td>
+													<span class="keyword_dropbox" style="width:140px">
+														<input type="text" onkeydown="keywordDropbox(this,event)">
+														<span class="kd_list">
+															<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+														</span>
+													</span>
+													<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Rsvn Date</th>
+												<td>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+													<span class="date_term" style="width:10px">~</span>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+												</td>
+												<th scope="row">Market type</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">Special req</th>
+												<td>
+													<span class="keyword_dropbox" style="width:140px">
+														<input type="text" onkeydown="keywordDropbox(this,event)">
+														<span class="kd_list">
+															<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+														</span>
+													</span>
+													<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">Cancel Date</th>
+												<td>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+													<span class="date_term" style="width:10px">~</span>
+													<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14" /><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+												</td>
+												<th scope="row">Segment</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">User</th>
+												<td>
+													<span class="keyword_dropbox" style="width:140px">
+														<input type="text" onkeydown="keywordDropbox(this,event)">
+														<span class="kd_list">
+															<b><a href="javascript:void(0)" class="hover">Jenna hotel Jenna hotel Jenna hotel 01</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 02</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 03</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+															<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+														</span>
+													</span>
+													<button type="button" class="btn_basic light ico_btn"><img src="../images/ico_search.png" alt="검색" class="ico"></button>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" rowspan="2">&nbsp;</td>
+												<th scope="row">Source</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+												<th scope="row">Selected Value</th>
+												<td colspan="3" rowspan="2">
+													<div class="multi_selected">
+														<ul class="double">
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">공실</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">청소완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+															<li><span class="txt">점검완료</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" style="height:34px">Rate type</th>
+												<td>
+													<select name="" id="" style="width:140px">
+														<option value=""></option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="btn_isd_set">
+										<button class="btn_basic lg dark"><i class="xi-refresh"></i><span class="txt">Refresh</span></button>
+										<button class="btn_basic lg btn_search"><i class="xi-search"></i><span class="txt">Search</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="scroll_table" style="height:580px">
+							<div class="st_list">
+								<dl>
+									<dt>
+										<ul>
+											<li class="check_radio" style="width:40px"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">Status</span></li>
+											<li style="width:100px"><span class="txt">Rsvn #</span></li>
+											<li style="width:100px"><span class="txt">Group ID</span></li>
+											<li style="width:100px"><span class="txt">Room #</span></li>
+											<li style="width:100px"><span class="txt">Rm Type</span></li>
+											<li style="width:100px"><span class="txt">VIP</span></li>
+											<li style="width:100px"><span class="txt">Name</span></li>
+											<li style="width:100px"><span class="txt">Arr Date</span></li>
+											<li style="width:100px"><span class="txt">Dep Date</span></li>
+											<li style="width:100px"><span class="txt">Nts</span></li>
+											<li style="width:100px"><span class="txt">Rm Conuts</span></li>
+											<li style="width:100px"><span class="txt">Adult</span></li>
+											<li style="width:100px"><span class="txt">Child</span></li>
+											<li style="width:100px"><span class="txt">Rm Rate</span></li>
+											<li style="width:100px"><span class="txt">Rm Total</span></li>
+											<li style="width:100px"><span class="txt">SVC Rate</span></li>
+											<li style="width:100px"><span class="txt">SVC</span></li>
+											<li style="width:100px"><span class="txt">SVC Total</span></li>
+											<li style="width:100px"><span class="txt">Total Amount</span></li>
+											<li style="width:100px"><span class="txt">Balance</span></li>
+											<li style="width:100px"><span class="txt">Account</span></li>
+											<li style="width:100px"><span class="txt">Market</span></li>
+											<li style="width:100px"><span class="txt">Market Seg</span></li>
+											<li style="width:100px"><span class="txt">Source</span></li>
+											<li style="width:100px"><span class="txt">Rate Type</span></li>
+											<li style="width:100px"><span class="txt">PKG</span></li>
+											<li style="width:100px"><span class="txt">Deposit</span></li>
+											<li style="width:200px"><span class="txt">Memo</span></li>
+											<li style="width:100px"><span class="txt">Reg</span></li>
+											<li style="width:100px"><span class="txt">Trace</span></li>
+										</ul>
+									</dt>
+									<dd>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" checked /></span></li>
+											<li style="width:100px"><span class="txt">RSV</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">101</span></li>
+											<li style="width:100px"><span class="txt">Rm</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">ROOF</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">NOS</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">102</span></li>
+											<li style="width:100px"><span class="txt">Type</span></li>
+											<li style="width:100px"><span class="txt">N</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email on"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">CXL</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">103</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">C/I</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">104</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">N</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">C/O</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">105</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+										<ul>
+											<li style="width:40px" class="check_radio"><span class="txt"><input type="checkbox" /></span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">106</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:100px"><span class="txt">Jenna</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">2021-08-06</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px"><span class="txt">1</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">900</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">100</span></li>
+											<li style="width:100px"><span class="txt">BF</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">1000</span></li>
+											<li style="width:100px"><span class="txt">LG</span></li>
+											<li style="width:100px"><span class="txt">DIR</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">PHN</span></li>
+											<li style="width:100px"><span class="txt">RIT</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">Y</span></li>
+											<li style="width:200px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px"><span class="txt"><a href="#" class="btn_email"><i class="xi-mail"><b class="art_txt">메일보내</b></i></a></span></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<div class="st_total">
+								<dl>
+									<dt>
+										<ul>
+											<li style="width:940px" class="al_left"><span class="txt">Total counts: 3</span></li>
+											<li style="width:100px"><span class="txt">합계</span></li>
+											<li style="width:100px"><span class="txt">합계</span></li>
+											<li style="width:100px"><span class="txt">합계</span></li>
+											<li style="width:100px"><span class="txt">합계</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:100px"><span class="txt">&nbsp;</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:100px" class="al_right"><span class="txt">합계</span></li>
+											<li style="width:1100px"><span class="txt">&nbsp;</span></li>
+										</ul>
+									</dt>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_reservation">
+						Reservation
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_exp_ci">
+						Exp C/I
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_actual_ci">
+						Actual C/I
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_in_house">
+						In-House
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_exp_co">
+						Exp C/O
+					</div>
+					<div class="inner_tabcont" data-inner-tabcont="multi_list" id="ml_actual_co">
+						Actual C/O
+					</div>
+					<script>
+						innerTabNavi("multi_list"); //컨텐츠 내부 텝
+					</script>
+				</section>
+			</div>
+			
+			<!--  Layer Calendar -->
+			<div class="layer_calendar" style="top:265px; left:115px">
+				<div class="btn_lc_move">
+					<button type="button" class="prev"><i></i></button>
+					<button type="button" class="next"><i></i></button>
+				</div>
+				
+				<!-- Wrap Block -->
+				<div class="lc_wrap">
+					<h3>2021.12</h3>
+					<div class="lc_cont">
+						<table>
+							<caption>Calendar</caption>
+							<thead>
+								<tr>
+									<th scope="col" class="sun">Sun</th>
+									<th scope="col">Mon</th>
+									<th scope="col">Tue</th>
+									<th scope="col">Wed</th>
+									<th scope="col">Thu</th>
+									<th scope="col">Fri</th>
+									<th scope="col" class="sat">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><button type="button" disabled>28</button></td>
+									<td><button type="button" disabled>29</button></td>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" disabled>5</button></td>
+									<td class="today"><button type="button">6</button></td>
+									<td><button type="button">7</button></td>
+									<td><button type="button">8</button></td>
+									<td><button type="button">9</button></td>
+									<td><button type="button">10</button></td>
+									<td><button type="button">11</button></td>
+								</tr>
+								<tr>
+									<td class="hover"><button type="button">12</button></td>
+									<td><button type="button">13</button></td>
+									<td class="flag"><button type="button">14</button></td>
+									<td class="range"><button type="button">15</button></td>
+									<td class="range"><button type="button">16</button></td>
+									<td class="range"><button type="button">17</button></td>
+									<td class="range"><button type="button">18</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">19</button></td>
+									<td class="range"><button type="button">20</button></td>
+									<td class="range"><button type="button">21</button></td>
+									<td class="range"><button type="button">22</button></td>
+									<td class="range"><button type="button">23</button></td>
+									<td class="range"><button type="button">24</button></td>
+									<td class="range"><button type="button">25</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">26</button></td>
+									<td class="range"><button type="button">27</button></td>
+									<td class="range"><button type="button">28</button></td>
+									<td class="range"><button type="button">29</button></td>
+									<td class="range"><button type="button">30</button></td>
+									<td class="range"><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Wrap Block -->
+				
+				<!-- Wrap Block -->
+				<div class="lc_wrap">
+					<h3>2022.12</h3>
+					<div class="lc_cont">
+						<table>
+							<caption>Calendar</caption>
+							<colgroup>
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+								<col style="width:28px" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="sun">Sun</th>
+									<th scope="col">Mon</th>
+									<th scope="col">Tue</th>
+									<th scope="col">Wed</th>
+									<th scope="col">Thu</th>
+									<th scope="col">Fri</th>
+									<th scope="col" class="sat">Sat</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><button type="button" disabled>26</button></td>
+									<td><button type="button" disabled>27</button></td>
+									<td><button type="button" disabled>28</button></td>
+									<td><button type="button" disabled>29</button></td>
+									<td><button type="button" disabled>30</button></td>
+									<td><button type="button" disabled>31</button></td>
+									<td class="range"><button type="button">1</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">2</button></td>
+									<td class="range"><button type="button">3</button></td>
+									<td class="range"><button type="button">4</button></td>
+									<td class="range"><button type="button">5</button></td>
+									<td class="range"><button type="button">6</button></td>
+									<td class="range"><button type="button">7</button></td>
+									<td class="range"><button type="button">8</button></td>
+								</tr>
+								<tr>
+									<td class="range"><button type="button">9</button></td>
+									<td class="range"><button type="button">10</button></td>
+									<td class="hover range"><button type="button">11</button></td>
+									<td><button type="button">12</button></td>
+									<td><button type="button">13</button></td>
+									<td><button type="button">14</button></td>
+									<td><button type="button">15</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">16</button></td>
+									<td><button type="button">17</button></td>
+									<td><button type="button">18</button></td>
+									<td><button type="button">19</button></td>
+									<td><button type="button">20</button></td>
+									<td><button type="button">21</button></td>
+									<td><button type="button">22</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">23</button></td>
+									<td><button type="button">24</button></td>
+									<td><button type="button">25</button></td>
+									<td><button type="button">26</button></td>
+									<td><button type="button">27</button></td>
+									<td><button type="button">28</button></td>
+									<td><button type="button">29</button></td>
+								</tr>
+								<tr>
+									<td><button type="button">30</button></td>
+									<td><button type="button">31</button></td>
+									<td><button type="button" disabled>1</button></td>
+									<td><button type="button" disabled>2</button></td>
+									<td><button type="button" disabled>3</button></td>
+									<td><button type="button" disabled>4</button></td>
+									<td><button type="button" disabled>5</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Wrap Block -->
+				
+				<button type="button" class="lc_close"><i></i></button>
+			</div>
+			<!--  //Layer Calendar -->
+			
+			<!-- Layer Popup -->
+			<div class="layer_popup" id="roomAssign">
+				<h2>Room Assign</h2>
+				<div class="lp_content room_assign">
+					<section class="search_result">
+						<div class="sr_tit">
+							<h3>Room Assign List</h3>
+						</div>
+						<div class="sr_cont">
+							<div class="inner_search_filter">
+								<table class="room_assign_list">
+									<caption>Search filter</caption>
+									<colgroup>
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>
+												<ul class="write_form">
+													<li><span class="category">Name</span><span class="field"><input type="text" style="width:163px;"></span></li>
+													<li>
+														<span class="category">Arr Date</span>
+														<span class="field">
+															<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14"><span class="txt_day sun">일</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">시작 일</b></i></button></span>
+															<span class="date_term">~</span>
+															<span class="datepicker" style="width:110px"><input type="text" value="2021-12-14"><span class="txt_day sat">토</span><button class="btn_calendar"><i class="xi-calendar"><b class="art_txt">종료 일</b></i></button></span>
+														</span>
+													</li>
+												</ul>
+												<div class="btn_search">
+													<button type="button" class="btn_basic dark"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+													<button type="button" class="btn_basic"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+							<div class="scroll_table" style="height:339px">
+								<div class="st_list">
+									<table id="rsTable1">
+										<caption>Table Body</caption>
+										<colgroup>
+											<col style="width:40px">
+											<col style="width:56px">
+											<col style="width:70px">
+											<col style="width:95px">
+											<col style="width:95px">
+											<col style="width:98px">
+											<col style="width:98px">
+											<col style="width:40px">
+											<col>
+											<col style="width:40px">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" class="check_radio"><input type="checkbox" /></th>
+												<th scope="col">Room #</th>
+												<th scope="col">Rm. Type</th>
+												<th scope="col">Group ID</th>
+												<th scope="col">Name</th>
+												<th scope="col">Arr. Date</th>
+												<th scope="col">Dep. Date</th>
+												<th scope="col">Nts</th>
+												<th scope="col">Account</th>
+												<th scope="col">Req</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr data-rs-info="rs1_1">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day sun">일</span></td>
+												<td>2021-08-12 <span class="txt_day sun">일</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_2">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>102</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day sat">토</span></td>
+												<td>2021-08-12 <span class="txt_day sat">토</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_3">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>103</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_4">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>104</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_5">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>105</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_6">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>106</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_7">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>107</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_8">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>108</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_9">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>109</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_10">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>110</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_11">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>111</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_12">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>112</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_13">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>113</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_14">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>114</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr data-rs-info="rs1_15">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>115</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="st_total">
+									<table>
+										<caption>Table Foot</caption>
+										<tbody>
+											<tr>
+												<td class="al_left">Total counts: 3</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="sr_tit">
+							<h3>Advanced Room Assign List</h3>
+							<p class="dnm_room">
+								<img src="../images/ico_dnm_room.png" alt="Room#" class="ico" /><span class="txt">DNM(Do Not Move)</span>
+							</p>
+						</div>
+						<div class="sr_cont">
+							<div class="scroll_table" style="height:147px">
+								<div class="st_list">
+									<table>
+										<caption>Table Body</caption>
+										<colgroup>
+											<col style="width:60px">
+											<col style="width:70px">
+											<col style="width:100px">
+											<col style="width:100px">
+											<col style="width:100px">
+											<col style="width:100px">
+											<col style="width:40px">
+											<col>
+											<col style="width:40px">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">Room #</th>
+												<th scope="col">Rm. Type</th>
+												<th scope="col">Group ID</th>
+												<th scope="col">Name</th>
+												<th scope="col">Arr. Date</th>
+												<th scope="col">Dep. Date</th>
+												<th scope="col">Nts</th>
+												<th scope="col">Account</th>
+												<th scope="col">Req</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>101</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day sun">일</span></td>
+												<td>2021-08-12 <span class="txt_day sun">일</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>102</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day sat">토</span></td>
+												<td>2021-08-12 <span class="txt_day sat">토</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>103</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>104</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>105</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>106</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>107</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>108</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>109</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>110</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>111</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>112</td>
+												<td>STD</td>
+												<td>G2107280002</td>
+												<td>name 01</td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>2021-08-12 <span class="txt_day">월</span></td>
+												<td>1</td>
+												<td>yanolja</td>
+												<td>1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="btn_rs_move">
+						<button type="button" class="right">우측 이동</button>
+						<button type="button" class="left">좌측 이동</button>
+					</div>
+					<section class="search_result">
+						<div class="sr_tit">
+							<h3>Available Rooms</h3>
+						</div>
+						<div class="sr_cont">
+							<div class="inner_search_filter">
+								<table class="available_rooms">
+									<caption>Search filter</caption>
+									<colgroup>
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>
+												<ul class="write_form">
+													<li>
+														<span class="category">Rm. Type</span>
+														<span class="field">
+															<select>
+																<option value="">STD</option>
+															</select>
+														</span>
+													</li>
+													<li>
+														<span class="category">Status</span>
+														<span class="field">
+															<select>
+																<option value="">Vacant</option>
+															</select>
+														</span>
+													</li>
+													<li>
+														<span class="category">Floor</span>
+														<span class="field">
+															<select>
+																<option value=""></option>
+															</select>
+														</span>
+													</li>
+												</ul>
+												<ul class="write_form">
+													<li>
+														<span class="category">Clean</span>
+														<span class="field">
+															<select>
+																<option value="">Cleaned</option>
+															</select>
+														</span>
+													</li>
+													<li>
+														<span class="category">Rm. Equip</span>
+														<span class="field">
+															<select>
+																<option value=""></option>
+															</select>
+														</span>
+													</li>
+													<li>
+														<span class="category">View</span>
+														<span class="field">
+															<select>
+																<option value=""></option>
+															</select>
+														</span>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="multi_selected">
+													<ul class="double">
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">Clean</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STD</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+														<li><span class="txt">STT</span><button type="button" class="btn_delete"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+													</ul>
+												</div>
+												<div class="btn_search row2">
+													<button type="button" class="btn_basic dark"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button>
+													<button type="button" class="btn_basic"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+							<p class="option_iar"><label><input type="checkbox" />Including Assigned Rooms</label></p>
+							<div class="scroll_table" style="height:387px">
+								<div class="st_list">
+									<table id="rsTable2">
+										<caption>Table Body</caption>
+										<colgroup>
+											<col style="width:40px" />
+											<col style="width:60px" />
+											<col style="width:70px" />
+											<col style="width:70px" />
+											<col style="width:70px" />
+											<col />
+											<col style="width:160px" />
+											<col style="width:160px" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" class="check_radio"><input type="checkbox" /></th>
+												<th scope="col">Room #</th>
+												<th scope="col">Rm. Type</th>
+												<th scope="col">Status</th>
+												<th scope="col">Clean</th>
+												<th scope="col">Assigned</th>
+												<th scope="col">Rm Equip</th>
+												<th scope="col">View</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr data-rs-info="rs2_1">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_2">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_3">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td class="dnm"><span class="ico_assigned"><img src="../images/ico_dnm.png" alt="DNM" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_4">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_5">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_6">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_7">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_8">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_9">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_10">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_11">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_12">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_13">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_14">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_15">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_16">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_17">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_18">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_checkout_today.png" alt="Check out today" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+											<tr data-rs-info="rs2_19">
+												<td class="check_radio"><input type="checkbox" /></td>
+												<td>101</td>
+												<td>STD</td>
+												<td>Vacant</td>
+												<td>Cleaning</td>
+												<td><span class="ico_assigned"><img src="../images/ico_already_assigned.png" alt="Already assigned" /></span></td>
+												<td>MICRO</td>
+												<td>OCEAN</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="st_total">
+									<table>
+										<caption>Table Foot</caption>
+										<tbody>
+											<tr>
+												<td class="al_left">Total counts: 3</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<ul class="assigned_type">
+								<li><img src="../images/ico_checkout_today.png" alt="" class="ico" /><span class="txt">Check out today</span></li>
+								<li><img src="../images/ico_already_assigned.png" alt="" class="ico" /><span class="txt">Already assigned</span></li>
+								<li><img src="../images/ico_dnm.png" alt="" class="ico" /><span class="txt">DNM</span></li>
+							</ul>
+							<div class="btn_sr_set">
+								<button type="button" class="btn_basic md"><i class="xi-save"></i><span class="txt">Save</span></button>
+							</div>
+						</div>
+					</section>
+				</div>
+				<button type="button" class="lp_close" onclick="closeLayerPopup('#roomAssign',this)"><i></i></button>
+			</div>
+			<script>
+				function rsDragDrop() {
+					//Room Assign List 테이블
+					var rsTable1 = $("#rsTable1");
+					var rsTable1Wrap = rsTable1.parents(".scroll_table");
+					var rst1Tr = rsTable1.find("tbody>tr");
+					var rst1SelectedInfo = [];
+					var rst1SelectedLen = 0;
+					
+					//Available Rooms 테이블
+					var rsTable2 = $("#rsTable2");
+					var rsTable2Wrap = rsTable2.parents(".scroll_table");
+					var rst2Tr = rsTable2.find("tbody>tr");
+					var rst2SelectedInfo = [];
+					var rst2SelectedLen = 0;
+					
+					//Room Assign List 체크박스 클릭 시
+					rst1Tr.find(".check_radio input[type='checkbox']").on("click",function(e) {
+						tTr = $(this).parent().parent()
+					
+						if($(this).is(":checked") == true) {
+							tTr.addClass("checked")
+							rst1SelectedLen++;
+							
+							if(rst1SelectedLen > 0) {
+								rst1Tr.draggable("disable")
+								rsTable1Wrap.draggable("enable")
+							}
+						} else if($(this).is(":checked") == false) {
+							tTr.removeClass("checked")
+							rst1SelectedLen--;
+							
+							if(rst1SelectedLen <= 0) {
+								rst1Tr.draggable("enable")
+								rsTable1Wrap.draggable("disable")
+							}
+						}
+						
+						e.stopPropagation();
+					})
+					
+					//Available Rooms 체크박스 클릭 시
+					rst2Tr.find(".check_radio input[type='checkbox']").on("click",function(e) {
+						tTr = $(this).parent().parent()
+					
+						if($(this).is(":checked") == true) {
+							tTr.addClass("checked")
+							rst2SelectedLen++;
+							console.log(rst2SelectedLen)
+							if(rst2SelectedLen > 0) {
+								rst2Tr.draggable("disable")
+								rsTable2Wrap.draggable("enable")
+							}
+						} else if($(this).is(":checked") == false) {
+							tTr.removeClass("checked")
+							rst2SelectedLen--;
+							
+							if(rst2SelectedLen <= 0) {
+								rst2Tr.draggable("enable")
+								rsTable2Wrap.draggable("disable")
+							}
+						}
+						
+						e.stopPropagation();
+					})
+					
+					//Room Assign List -> Available Rooms
+					rst1Tr.each(function(i) {
+						rst1Tr.eq(i).draggable({
+							containment: $("#roomAssign .lp_content.room_assign"),
+							start: function() {
+								var tIndex = $(this).index();
+								rst1SelectedInfo[tIndex] = $(this).attr("data-rs-info")
+							},
+							helper: function() {
+								var helper = $(this).clone();
+								helper.css({"z-index": 99})
+								$(this).find("td").each(function(a) {
+									helper.find("td").eq(a).css({
+										"width": $(this).outerWidth() + "px"
+									})
+								})
+								return helper
+							}
+						});
+					})
+					rsTable1Wrap.draggable({
+						containment: $("#roomAssign .lp_content.room_assign"),
+						start: function() {
+							$(this).find("tr.checked").each(function(a) {
+								tIndex = $(this).index();
+								rst1SelectedInfo[tIndex] = $(this).attr("data-rs-info")
+							})
+						},
+						helper: function() {
+							var helper = $(this).clone();
+							helper.find("tr").filter(":not(.checked)").hide();
+							helper.find("tr.checked").css({"background":"white"});
+							helper.addClass("dragging").css({
+								"width": $(this).find(".st_list table").outerWidth() + "px",
+								"height": "auto",
+								"marginTop": "26px",
+								"z-index": 99
+							})
+							return helper
+						}
+					});
+					rsTable2Wrap.droppable({
+						accept: rsTable1Wrap,
+						drop: function( event, ui ) {
+							console.log(rst1SelectedInfo) //드래그 객체에 대한 콘솔 출력
+							rst1SelectedInfo = []; //콘솔 출력 후 초기화
+						}
+					})
+					
+					//Available Rooms -> Room Assign List
+					rst2Tr.each(function(k) {
+						rst2Tr.eq(k).draggable({
+							containment: $("#roomAssign .lp_content.room_assign"),
+							start: function() {
+								var tIndex = $(this).index();
+								rst2SelectedInfo[tIndex] = $(this).attr("data-rs-info")
+							},
+							helper: function() {
+								var helper = $(this).clone();
+								helper.css({"z-index": 99})
+								$(this).find("td").each(function(c) {
+									helper.find("td").eq(c).css({
+										"width": $(this).outerWidth() + "px"
+									})
+								})
+								return helper
+							}
+						});
+					})
+					rsTable2Wrap.draggable({
+						containment: $("#roomAssign .lp_content.room_assign"),
+						start: function() {
+							$(this).find("tr.checked").each(function(c) {
+								tIndex = $(this).index();
+								rst2SelectedInfo[tIndex] = $(this).attr("data-rs-info")
+							})
+						},
+						helper: function() {
+							var helper = $(this).clone();
+							helper.find("tr").filter(":not(.checked)").hide();
+							helper.find("tr.checked").css({"background":"white"});
+							helper.addClass("dragging").css({
+								"width": $(this).find(".st_list table").outerWidth() + "px",
+								"height": "auto",
+								"marginTop": "26px",
+								"z-index": 99
+							})
+							return helper
+						}
+					});
+					rsTable1Wrap.droppable({
+						accept: rsTable2Wrap,
+						drop: function( event, ui ) {
+							console.log(rst2SelectedInfo) //드래그 객체에 대한 콘솔 출력
+							rst2SelectedInfo = []; //콘솔 출력 후 초기화
+						}
+					})
+				}
+				rsDragDrop();
+			</script>
+			<div class="bg_modal"></div>
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="sale">
+			<h2><span class="txt">Sale</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:yellow">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+	</main>
+	<footer id="footer">
+		<p class="copyright">Copyright (C) CODY THE MANAGER All rights reserved.</p>
+		<ul class="f_menu">
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Use terms</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Sitemap -->
+	<nav id="sitemap">
+		<ul>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi List</a></li>
+					<li><a href="javascript:void(0);">Room Inventory</a></li>
+					<li><a href="javascript:void(0);">Account Profile</a></li>
+					<li><a href="javascript:void(0);">CMS List</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-network-home"></i><span class="txt">Front</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi Front</a></li>
+					<li><a href="javascript:void(0);">Assign Status</a></li>
+					<li><a href="javascript:void(0);">Room Status</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-money"></i><span class="txt">Cashiering</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Check-Out</a></li>
+					<li><a href="javascript:void(0);">Exchange</a></li>
+					<li><a href="javascript:void(0);">Deposit List</a></li>
+					<li><a href="javascript:void(0);">Night Audit</a></li>
+					<li><a href="javascript:void(0);">A/R</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-ico-hk"></i><span class="txt">HK</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Room Status</a></li>
+					<li><a href="javascript:void(0);">Room Cleaning</a></li>
+					<li><a href="javascript:void(0);">O.O.O</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+					<li><a href="javascript:void(0);">Multi List</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Outlet</a></li>
+					<li><a href="javascript:void(0);">Menu</a></li>
+					<li><a href="javascript:void(0);">E.Reservation</a></li>
+					<li><a href="javascript:void(0);">Event List</a></li>
+					<li><a href="javascript:void(0);">E.Calendar</a></li>
+					<li><a href="javascript:void(0);">E.Monthly Table</a></li>
+					<li><a href="javascript:void(0);">E.Daily Table</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-document"></i><span class="txt">Report</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Dash Board</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Front</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Reservation </a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Sales</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Daily Report</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Ananlysis</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-cog"></i><span class="txt">Config</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">RM Setting</a></li>
+					<li><a href="javascript:void(0);">Rm Number List</a></li>
+					<li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+					<li><a href="javascript:void(0);">Service/Request</a></li>
+					<li><a href="javascript:void(0);">Calendar</a></li>
+					<li><a href="javascript:void(0);">Rate Plan</a></li>
+					<li><a href="javascript:void(0);">Package</a></li>
+					<li><a href="javascript:void(0);">Room Block</a></li>
+					<li><a href="javascript:void(0);">CMS Setting</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Room Cleaning</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-user"> </i><span class="txt">Admin</span>
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="btn_close"><i class="xi-close-min"></i><span class="txt">Close</span></button>
+	</nav>
+	<!-- //Sitemap -->
+	
+	<!-- Quick Menu  -->
+	<aside id="quick_menu">
+		<div class="qm_wrap" id="qm_bookmark">
+			<h3 class="bookmark"><span class="txt">Bookmark</span><button type="button" class="add"><i class="xi-plus-circle"><b class="art_txt">추가</b></i></button></h3>
+			<ul>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+			</ul>
+		</div>
+		<div class="qm_wrap" id="qm_recent">
+			<h3 class="recent"><span class="txt">Recent Menu</span></h3>
+			<ul>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+			</ul>
+		</div>
+		<div class="btn_log_set">
+			<button type="button" class="btn" disabled><i class="xi-book"></i><span class="txt">Log Book</span></button>
+			<button type="button" class="btn" disabled><i class="xi-log-out"></i><span class="txt">Jenna</span></button>
+		</div>
+	</aside>
+	<!-- Quick Menu -->
+</body>
+</html>

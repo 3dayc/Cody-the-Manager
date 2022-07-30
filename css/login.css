@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* CMS Login */
+#cms_login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 714px;
+	transform: translate(-50%,-50%)
+}
+#cms_login article.login_form {
+	width: 440px;
+	height: 660px;
+	padding: 110px 70px 0px 70px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	background-color: rgb(51, 57, 66);
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+#cms_login article.login_form h1 {
+	text-align: center;
+	line-height: 0;
+	margin-bottom: 82px;
+}
+#cms_login article.login_form h1 span {
+	display: block;
+	line-height: 1;
+}
+#cms_login article.login_form h1 span.txt {
+	margin-top: 16px;
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+}
+#cms_login article.login_form fieldset {
+	width: 100%;
+}
+#cms_login article.login_form fieldset p.write_field {
+	position: relative;
+}
+#cms_login article.login_form fieldset p.write_field label {
+	position: absolute;
+	top: 12px;
+	left: 7px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	font-size: 24px;
+	color: #B3BDC8;
+}
+#cms_login article.login_form fieldset p.write_field input {
+	padding: 16px 50px 15px;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-size: 18px;
+	border-radius: 0px;
+	border-width: 0px 0px 1px;
+	border-style: solid;
+	border-color: rgba(255,255,255,0.3);
+	background-color: transparent;
+	transition: 0.3s ease border-color;
+}
+#cms_login article.login_form fieldset p.write_field input:focus {
+	border-color: rgba(255,255,255,1);
+}
+#cms_login article.login_form fieldset p.write_field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+	opacity: 1;
+}
+#cms_login article.login_form fieldset .btn_login {
+	margin-top: 30px;
+}
+#cms_login article.login_form fieldset .btn_login button {
+	width: 100%;
+	padding: 11px 0px 10px;
+	line-height: 1;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 3px;
+	background-color: #146FE8;
+	transition: 0.3s ease background-color;
+}
+#cms_login article.login_form fieldset .btn_login button:hover,
+#cms_login article.login_form fieldset .btn_login button:focus {
+	background-color: #0053C1;
+}
+#cms_login article.login_form p.massage {
+	position: relative;
+	padding-left: 20px;
+	margin-top: 20px;
+	color: white;
+}
+#cms_login article.login_form p.massage.warring {
+	color: #FFC800;
+}
+#cms_login article.login_form p.massage.danger {
+	color: #F77070;
+}
+#cms_login article.login_form p.massage i {
+	position: absolute;
+	top: -1px;
+	left: 0px;
+	font-size: 16px;
+}
+#cms_login article.login_form p.massage span.txt {
+	font-size: 14px;
+}
+#cms_login footer.copyright {
+	margin: 20px 0px;
+}
+#cms_login footer.copyright p {
+	font-size: 13px;
+	line-height: 1;
+	text-align: center;
+	color: rgba(255,255,255,0.25);
+}
+
+/* 모바일 해상도(세로 모드)
+**********************************************************/
+@media all and (max-width: 498px) {
+	#cms_login {
+		top: 0%;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		transform: translate(0%,0%)
+	}
+	#cms_login article.login_form {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 40px;
+		width: auto;
+		height: auto;
+		padding: 110px 40px 0px 40px
+	}
+	#cms_login footer.copyright {
+		position: absolute;
+		left: 0px;
+		bottom: 13px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+}
+
+
+/* 모바일 해상도(가로 모드)
+**********************************************************/
+@media all and (max-height: 420px) {
+	body#cms_login_wrap {
+		overflow: auto;
+	}
+	#cms_login {
+		margin-top: 20px;
+		top: 0%;
+		transform: translate(-50%,0%);
+	}
+}

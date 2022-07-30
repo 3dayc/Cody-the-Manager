@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+/* Default(base.css)
+**********************************************************************************/
+body {
+	background-color: #2E446D;
+}
+body *::-webkit-scrollbar-thumb {
+	background-color: #2E446D;
+}
+select.link,
+input[type="text"].link,
+input[type="email"].link,
+input[type="tel"].link,
+textarea.link {
+	color: #4C8BFF;
+}
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+	border-color: #4C8BFF;
+}
+input[type="checkbox"]:checked {
+	border-color: #4C8BFF;
+	background-color: #4C8BFF;
+}
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+	border-color: #4C8BFF;
+}
+input[type="radio"]:checked {
+	border-color: #4C8BFF;
+	background-color: #4C8BFF;
+}
+
+
+/* Header(layout.css)
+**********************************************************************************/
+/* Global Utile */
+header#header #g_utile fieldset.search_form p span.keyword_dropbox span.kd_list b a,
+header#header #g_utile fieldset.search_form p select {
+	background-color: #2E446D;
+}
+
+/* Global User navi */
+header#header nav#g_contents_navi ul.btn_quick_menu li a {
+	background-color: #4C6095;
+}
+header#header nav#g_contents_navi ul.current_open_tab li a {
+	color: rgba(255,255,255,0.5);
+	background-color: #1A3057;
+	opacity: 1;
+}
+header#header nav#g_contents_navi ul.current_open_tab li a.active {
+	color: white;
+	background-color: #4C8BFF;
+}
+header#header nav#g_contents_navi .btn_cot_set button {
+    background-color: #4C6095;
+}
+
+
+/* Quick Menu(layout.css)
+**********************************************************************************/
+aside#quick_menu {
+	background-color: #2E446D;
+}
+aside#quick_menu ul li a {
+	background-color: #4C8BFF;
+}
+aside#quick_menu ul li:hover a {
+	background-color: #60A4FF;
+}
+aside#quick_menu .btn_log_set button {
+	background-color: #556B91
+}
+
+
+/* Component(template.css)
+**********************************************************************************/
+/* Basic Button */
+button.btn_basic {
+	border-color: #4C8BFF;
+	background-color: #4C8BFF;
+}
+button.btn_basic:hover,
+button.btn_basic:focus {
+	border-color: #60A4FF;
+	background-color: #60A4FF;
+}
+
+/* Layer Toolbar */
+.layer_toolbar ul li button {
+	background-color: #4C8BFF;
+}
+.layer_toolbar ul li button:hover {
+	background-color: #60A4FF;
+}
+.layer_toolbar ul li button:disabled,
+.layer_toolbar ul li button:disabled:hover {
+	color: rgba(255,255,255,0.7);
+	background-color: #2A2E34;
+}
+
+/* Inner Tab */
+.inner_tabnavi ul li a {
+	border-color: #4C8BFF;
+}
+.inner_tabnavi ul li a.active {
+	background-color: #4C8BFF
+}
+
+/* Inner Search Filter */
+.inner_search_filter table tbody tr td.btn_isf_set button.btn_isf:hover,
+.inner_search_filter table tbody tr td.btn_isf_set button.btn_isf:focus {
+	border-color: #4C8BFF;
+	background-color: #4C8BFF;
+}
+
+
+/* Search Result
+*************************************************************************************/
+/* Search Result Title */
+section.search_result .sr_tit h3 a.btn_add {
+	color: #4C8BFF;
+}
+
+/* Search Result Content */
+section.search_result .sr_cont .inner_tabnavi ul li button.add_trace {
+	color: #4C8BFF;
+}
+
+/* Layer Popup(contents.css)
+*************************************************************************************/
+/* Payment */
+.layer_popup .lp_content.payment section.search_filter .method_menu ul li button:hover,
+.layer_popup .lp_content.payment section.search_filter .method_menu ul li button:focus,
+.layer_popup .lp_content.payment section.search_filter .method_menu ul li button.active {
+	background-color: #4C8BFF;
+}

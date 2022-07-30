@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body#cms_error_wrap {
+	background-color: white;
+}
+
+/* CMS Error */
+#cms_error {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	text-align: center;
+	transform: translate(-50%,-56%);
+}
+#cms_error p.message i,
+#cms_error p.message span.txt {
+	display: block;
+	line-height: 1;
+}
+#cms_error p.message i {
+	font-size: 200px;
+	color: #146FE8;
+	margin-bottom: 28px;
+}
+#cms_error p.message span.txt {
+	font-weight: 300;
+	font-size: 30px;
+	letter-spacing: -0.5px;
+}
+#cms_error .btn_return {
+	margin-top: 24px;
+}
+
+/* 모바일 해상도(세로 모드)
+**********************************************************/
+@media all and (max-width: 498px) {
+	/* CMS Error */
+	#cms_error {
+		width: 300px;
+		transform: translate(-50%,-62%);
+	}
+	#cms_error p.message i,
+	#cms_error p.message span.txt {
+		display: block;
+		line-height: 1;
+	}
+	#cms_error p.message i {
+		font-size: 130px;
+		color: #146FE8;
+		margin-bottom: 28px;
+	}
+	#cms_error p.message span.txt {
+		font-size: 20px;
+	}
+	#cms_error .btn_return {
+		margin-top: 24px;
+	}
+}

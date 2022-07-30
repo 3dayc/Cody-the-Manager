@@ -1,0 +1,914 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detction" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>PMS v3.5</title>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/xeicon.min.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/layout.css" />
+<link rel="stylesheet" href="../css/template.css" />
+<link rel="stylesheet" href="../css/contents.css" />
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="open_gnb"><img src="../images/logo_cody.png" alt="Cody The Manager" class="logo" /><span class="txt"><strong>PMS</strong> v.3.5</span></h1>
+		<button type="button" class="btn_sitemap"><img src="../images/btn_sitemap.png" alt="전체 메뉴" /></button>
+		<button type="button" class="btn_gnb_all"><img src="../images/btn_sitemap.png" alt="전체 메뉴" class="ico_open" /></button>
+		<nav id="gnb">
+            <ul>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi List</a></li>
+                        <li><a href="javascript:void(0);">Room Inventory</a></li>
+                        <li><a href="javascript:void(0);">Account Profile</a></li>
+                        <li><a href="javascript:void(0);">CMS List</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-network-home"></i><span class="txt">Front</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Multi Front</a></li>
+                        <li><a href="javascript:void(0);">Assign Status</a></li>
+                        <li><a href="javascript:void(0);">Room Status</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-money"></i><span class="txt">Cashiering</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Check-Out</a></li>
+                        <li><a href="javascript:void(0);">Exchange</a></li>
+                        <li><a href="javascript:void(0);">Deposit List</a></li>
+                        <li><a href="javascript:void(0);">Night Audit</a></li>
+                        <li><a href="javascript:void(0);">A/R</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-ico-hk"></i><span class="txt">HK</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Room Status</a></li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a></li>
+                        <li><a href="javascript:void(0);">O.O.O</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+                        <li><a href="javascript:void(0);">Multi List</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Outlet</a></li>
+                        <li><a href="javascript:void(0);">Menu</a></li>
+                        <li><a href="javascript:void(0);">E.Reservation</a></li>
+                        <li><a href="javascript:void(0);">Event List</a></li>
+                        <li><a href="javascript:void(0);">E.Calendar</a></li>
+                        <li><a href="javascript:void(0);">E.Monthly Table</a></li>
+                        <li><a href="javascript:void(0);">E.Daily Table</a></li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-document"></i><span class="txt">Report</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">Dash Board</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Front</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Reservation </a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Sales</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Daily Report</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                                <li><a href="javascript:void(0);">Guest Ledger</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+								<li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+						</li>
+                        <li><a href="javascript:void(0);">Ananlysis</a>
+							<ul class="deps3">
+                                <li><a href="javascript:void(0);">Folio History</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-cog"></i><span class="txt">Config</span>
+                    </a>
+                    <ul class="deps2">
+                        <li><a href="javascript:void(0);">RM Setting</a></li>
+                        <li><a href="javascript:void(0);">Rm Number List</a></li>
+                        <li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+                        <li><a href="javascript:void(0);">Service/Request</a></li>
+                        <li><a href="javascript:void(0);">Calendar</a></li>
+                        <li><a href="javascript:void(0);">Rate Plan</a></li>
+                        <li><a href="javascript:void(0);">Package</a></li>
+                        <li><a href="javascript:void(0);">Room Block</a></li>
+                        <li><a href="javascript:void(0);">CMS Setting</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Room Cleaning</a>
+                            <ul class="deps3">
+                                <li><a href="javascript:void(0);">3depth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deps1">
+                    <a href="javascript:void(0);">
+                        <i class="xi-user"> </i><span class="txt">Admin</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+		<div id="g_utile">
+			<fieldset class="search_form">
+				<legend>Hotel Search</legend>
+				<p>
+					<select>
+						<option value="">Jenna hotel 01</option>
+						<option value="">Jenna hotel 02</option>
+						<option value="">Jenna hotel 03</option>
+					</select>
+					<span class="keyword_dropbox">
+						<input type="text" onkeydown="keywordDropbox(this,event)" placeholder="Enter the search word.">
+						<span class="kd_list">
+							<b><a href="javascript:void(0)">Reservation ◀ Reservation</a></b>
+							<b><a href="javascript:void(0)" class="hover">Reservation on andby ◀ Reservation ◀ Reservation ◀ E.Reservation</a></b>
+							<b><a href="javascript:void(0)">Reservation ◀ Report</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 04</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 05</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel Jenna hotel Jenna hotel 06</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 07</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 08</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 09</a></b>
+							<b><a href="javascript:void(0)">Jenna hotel 10</a></b>
+						</span>
+					</span>
+					<button type="button"><i class="xi-search"><b class="art_txt">검색</b></i></button>
+				</p>
+			</fieldset>
+			<ul class="user_menu">
+				<li class="user_info">
+					<button type="button"><i class="xi-profile"></i><span class="txt">Jenna</span></button>
+				</li>
+				<li class="pms_day">2022.01.01</li>
+				<li class="logout">
+					<button type="button" class="info_log"><i class="xi-log-out"><b class="art_txt">로그아웃</b></i></button>
+				</li>
+				<li class="help">
+					<button type="button" class="info_log"><i class="xi-help-o"><b class="art_txt">도움말</b></i></button>
+				</li>
+			</ul>
+		</div>
+		<nav id="g_contents_navi">
+			<ul class="btn_quick_menu">
+				<li>
+					<a href="#qm_bookmark">
+						<i class="xi-star-o open"><b class="art_txt">즐겨찾기</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+				<li>
+					<a href="#qm_recent">
+						<i class="xi-ico-history open"><b class="art_txt">최근방문</b></i>
+						<i class="xi-close-min close"><b class="art_txt">닫기</b></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="current_open_tab">
+				<li>
+					<a href="#dashBoard" onclick="showTabContent(this); return false" class="active"><span class="txt">Dash Board</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+				<li>
+					<a href="#sale" onclick="showTabContent(this); return false"><span class="txt">Sale</span></a>
+					<button type="button" class="btn_close"><i class="xi-close-min"><b class="art_txt">탭닫기</b></i></button>
+				</li>
+			</ul>
+			<div class="btn_cot_set">
+				<button type="button" class="btn_prev"><i class="xi-angle-left-min"><b class="art_txt">이전</b></i></button>
+				<button type="button" class="btn_next"><i class="xi-angle-right-min"><b class="art_txt">다음</b></i></button>
+			</div>
+		</nav>
+		<script>
+			initCurrentOpenTabScroll(); //텝 생성 직후 실행되어야 함
+		</script>
+	</header>
+	<main id="container">
+		<article class="content" id="dashBoard" style="display:block;">
+			<h2><span class="txt">Dash Board</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner">
+				<section class="search_result">
+					<div class="dash_board">
+						<div class="db_wrap col2">
+							<div class="db_item">
+								<h3>Daily Room Status</h3>
+								<div class="basic_table daily_room_status">
+									<table>
+										<caption>Daily Room Status</caption>
+										<colgroup>
+											<col style="width:142px" />
+											<col span="6" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">&nbsp;</th>
+												<th scope="col">6/24</th>
+												<th scope="col">6/25</th>
+												<th scope="col">6/26</th>
+												<th scope="col">6/27</th>
+												<th scope="col">6/28</th>
+												<th scope="col">6/29</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Occ(%)</td>
+												<td class="yesterday">98.5%</td>
+												<td class="today">101.5%</td>
+												<td>101.5%</td>
+												<td>101.5%</td>
+												<td>101.5%</td>
+												<td>101.5%</td>
+											</tr>
+											<tr>
+												<td>Sold Rooms</td>
+												<td class="yesterday">158</td>
+												<td class="today">175</td>
+												<td>175</td>
+												<td>175</td>
+												<td>175</td>
+												<td>175</td>
+											</tr>
+											<tr>
+												<td>Total Revenue</td>
+												<td class="yesterday">8,222,536</td>
+												<td class="today">8,222,536</td>
+												<td>8,222,536</td>
+												<td>8,222,536</td>
+												<td>8,222,536</td>
+												<td>8,222,536</td>
+											</tr>
+											<tr>
+												<td>ADR</td>
+												<td class="yesterday">255.235</td>
+												<td class="today">255.235</td>
+												<td>255.235</td>
+												<td>255.235</td>
+												<td>255.235</td>
+												<td>255.235</td>
+											</tr>
+											<tr>
+												<td>Rev.PAR</td>
+												<td class="yesterday">158.258</td>
+												<td class="today">158.258</td>
+												<td>158.258</td>
+												<td>158.258</td>
+												<td>158.258</td>
+												<td>158.258</td>
+											</tr>
+											<tr>
+												<td>Arrival</td>
+												<td class="yesterday">125</td>
+												<td class="today">99</td>
+												<td>99</td>
+												<td>99</td>
+												<td>99</td>
+												<td>99</td>
+											</tr>
+											<tr>
+												<td>Departure</td>
+												<td class="yesterday">98</td>
+												<td class="today">58</td>
+												<td>58</td>
+												<td>58</td>
+												<td>58</td>
+												<td>58</td>
+											</tr>
+											<tr>
+												<td>Stayover</td>
+												<td class="yesterday">27</td>
+												<td class="today">41</td>
+												<td>41</td>
+												<td>41</td>
+												<td>41</td>
+												<td>41</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="db_item">
+								<h3>Notice</h3>
+								<div class="notice_list">
+									<div class="scroll_table">
+										<div class="st_list">
+											<table>
+												<caption>Daily Room Status</caption>
+												<colgroup>
+													<col />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">Cody Notice<a href="#" class="btn_more"><i class="xi-plus-square-o"><b class="art_txt">더보기</b></i></a></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+													<tr>
+														<td class="al_left">부킹엔진 결제가 지연되었습니다. 6/30일까지 결제요망.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="scroll_table">
+										<div class="st_list">
+											<table>
+												<caption>Daily Room Status</caption>
+												<colgroup>
+													<col />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">Hotel Notice<a href="#" class="btn_more"><i class="xi-plus-square-o"><b class="art_txt">더보기</b></i></a></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+													<tr>
+														<td class="al_left">6/22일 절전층 15~17층. 객실 배정하지마세요.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								
+								<h3>VIP</h3>
+								<div class="scroll_table vip">
+									<div class="st_list">
+										<table>
+											<caption>Daily Room Status</caption>
+											<colgroup>
+												<col style="width:140px" />
+												<col style="width:50px" />
+												<col style="width:96px" />
+												<col style="width:96px" />
+												<col style="width:30px" />
+												<col style="width:120px" />
+												<col />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">Name</th>
+													<th scope="col">Room#</th>
+													<th scope="col">Arr.Date</th>
+													<th scope="col">Dep.Date</th>
+													<th scope="col">Nts</th>
+													<th scope="col">Amount</th>
+													<th scope="col">Memo</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+												<tr>
+													<td class="al_left">이정화</td>
+													<td>2001</td>
+													<td>2021-12-14 <span class="txt_day sun">일</span></td>
+													<td>2021-12-14 <span class="txt_day sat">토</span></td>
+													<td>5</td>
+													<td class="al_right">1,200,000</td>
+													<td class="al_left">진상. 스페셜케어</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="db_wrap">
+							<div class="db_item">
+								<h3>Monthly Status</h3>
+								<div class="chart_area"></div>
+							</div>
+						</div>
+						<div class="db_wrap col2">
+							<div class="db_item">
+								<h3>Average Length Of Stay [LOS]</h3>
+								<div class="chart_area"></div>
+							</div>
+							<div class="db_item">
+								<h3>Average Lead Time</h3>
+								<div class="chart_area"></div>
+							</div>
+						</div>
+						<div class="db_wrap col3">
+							<div class="db_item">
+								<h3>Market Type Analysis – MTD Revenue</h3>
+								<div class="chart_area"></div>
+							</div>
+							<div class="db_item">
+								<h3>Room Type Analysis - MTD Nights</h3>
+								<div class="chart_area"></div>
+							</div>
+							<div class="db_item">
+								<h3>Nationality Analysis - MTD Nights</h3>
+								<div class="chart_area"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+		<article class="content" id="sale">
+			<h2><span class="txt">Sale</span><button type="button" class="btn_refresh"><i class="xi-refresh"><b class="art_txt">새로고침</b></i></button></h2>
+			<div class="content_inner" style="height:700px; background-color:yellow">
+				test
+			</div>
+			<!-- Layer Popup -->
+			<!-- <div class="layer_popup" id="">...</div>
+			<div class="bg_modal"></div>-->
+			<!-- //Layer Popup -->
+		</article>
+	</main>
+	<footer id="footer">
+		<p class="copyright">Copyright (C) CODY THE MANAGER All rights reserved.</p>
+		<ul class="f_menu">
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Use terms</a></li>
+		</ul>
+	</footer>
+	
+	<!-- Sitemap -->
+	<nav id="sitemap">
+		<ul>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-calendar-check"></i><span class="txt">Reservation</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi List</a></li>
+					<li><a href="javascript:void(0);">Room Inventory</a></li>
+					<li><a href="javascript:void(0);">Account Profile</a></li>
+					<li><a href="javascript:void(0);">CMS List</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-network-home"></i><span class="txt">Front</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Multi Front</a></li>
+					<li><a href="javascript:void(0);">Assign Status</a></li>
+					<li><a href="javascript:void(0);">Room Status</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-money"></i><span class="txt">Cashiering</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Check-Out</a></li>
+					<li><a href="javascript:void(0);">Exchange</a></li>
+					<li><a href="javascript:void(0);">Deposit List</a></li>
+					<li><a href="javascript:void(0);">Night Audit</a></li>
+					<li><a href="javascript:void(0);">A/R</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-ico-hk"></i><span class="txt">HK</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Room Status</a></li>
+					<li><a href="javascript:void(0);">Room Cleaning</a></li>
+					<li><a href="javascript:void(0);">O.O.O</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Lost&amp;Found</a></li>
+					<li><a href="javascript:void(0);">Multi List</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-restaurant"></i><span class="txt">F&amp;B</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Outlet</a></li>
+					<li><a href="javascript:void(0);">Menu</a></li>
+					<li><a href="javascript:void(0);">E.Reservation</a></li>
+					<li><a href="javascript:void(0);">Event List</a></li>
+					<li><a href="javascript:void(0);">E.Calendar</a></li>
+					<li><a href="javascript:void(0);">E.Monthly Table</a></li>
+					<li><a href="javascript:void(0);">E.Daily Table</a></li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-document"></i><span class="txt">Report</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">Dash Board</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Front</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Reservation </a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Sales</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Daily Report</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+							<li><a href="javascript:void(0);">Guest Ledger</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Ananlysis</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">Folio History</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-cog"></i><span class="txt">Config</span>
+				</a>
+				<ul class="deps2">
+					<li><a href="javascript:void(0);">RM Setting</a></li>
+					<li><a href="javascript:void(0);">Rm Number List</a></li>
+					<li><a href="javascript:void(0);">Mkt/Seg Setting</a></li>
+					<li><a href="javascript:void(0);">Service/Request</a></li>
+					<li><a href="javascript:void(0);">Calendar</a></li>
+					<li><a href="javascript:void(0);">Rate Plan</a></li>
+					<li><a href="javascript:void(0);">Package</a></li>
+					<li><a href="javascript:void(0);">Room Block</a></li>
+					<li><a href="javascript:void(0);">CMS Setting</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);">Room Cleaning</a>
+						<ul class="deps3">
+							<li><a href="javascript:void(0);">3depth</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="deps1">
+				<a href="javascript:void(0);">
+					<i class="xi-user"> </i><span class="txt">Admin</span>
+				</a>
+			</li>
+		</ul>
+		<button type="button" class="btn_close"><i class="xi-close-min"></i><span class="txt">Close</span></button>
+	</nav>
+	<!-- //Sitemap -->
+	
+	<!-- Quick Menu  -->
+	<aside id="quick_menu">
+		<div class="qm_wrap" id="qm_bookmark">
+			<h3 class="bookmark"><span class="txt">Bookmark</span><button type="button" class="add"><i class="xi-plus-circle"><b class="art_txt">추가</b></i></button></h3>
+			<ul>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Payment</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Group reservation</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Check out</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+				<li><a href="#">Assign status</a><button type="button" class="close"><i class="xi-close-min"><b class="art_txt">삭제</b></i></button></li>
+			</ul>
+		</div>
+		<div class="qm_wrap" id="qm_recent">
+			<h3 class="recent"><span class="txt">Recent Menu</span></h3>
+			<ul>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+				<li><a href="#">Assign status</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Payment</a></li>
+				<li><a href="#">Group reservation</a></li>
+				<li><a href="#">Check out</a></li>
+			</ul>
+		</div>
+		<div class="btn_log_set">
+			<button type="button" class="btn" disabled><i class="xi-book"></i><span class="txt">Log Book</span></button>
+			<button type="button" class="btn" disabled><i class="xi-log-out"></i><span class="txt">Jenna</span></button>
+		</div>
+	</aside>
+	<!-- Quick Menu -->
+</body>
+</html>

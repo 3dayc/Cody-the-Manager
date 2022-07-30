@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+/* Font Face
+**********************************************************************************/
+/* Noto Sans */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/NotoSansKR-Light.woff2") format('woff2');
+  src: url("../font/NotoSansKR-Light.woff") format('woff');
+  src: url("../font/NotoSansKR-Light.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/NotoSansKR-Regular.woff2") format('woff2');
+  src: url("../font/NotoSansKR-Regular.woff") format('woff');
+  src: url("../font/NotoSansKR-Regular.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/NotoSansKR-Medium.woff2") format('woff2');
+  src: url("../font/NotoSansKR-Medium.woff") format('woff');
+  src: url("../font/NotoSansKR-Medium.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src:  url("../font/NotoSansKR-Bold.woff2") format('woff2');
+  src:  url("../font/NotoSansKR-Bold.woff") format('woff');
+  src:  url("../font/NotoSansKR-Bold.otf") format('opentype');
+}
+ 
+/* Roboto */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: 
+      url("../font/Roboto-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+      url("../font/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: 
+    url("../font/Roboto-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+      url("../font/Roboto-Bold.ttf") format('truetype');
+}
+
+/* xeicon */
+@font-face {
+  font-family: 'xeicon';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+    url("../font/xeicon.eot") format('eot'),
+    url("../font/xeicon.woff") format('woff'),
+    url("../font/xeicon.woff2") format('woff2'),
+    url("../font/xeicon.ttf") format('ttf'),
+    url("../font/xeicon.svg") format('svg');
+}
+
+/* Default Setting
+**********************************************************************************/
+header, footer, section, article,
+aside, nav, hgroup, details, menu,
+figure, figcaption {
+	display: block;
+}
+body {
+	overflow: hidden;
+	font-weight: 400;
+	font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color: #222222;
+	line-height: 17px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #282E38;
+}
+body *::-webkit-scrollbar {
+	width: 7px;
+}
+body *::-webkit-scrollbar:horizontal {
+	height: 7px;
+}
+body *::-webkit-scrollbar-thumb {
+	background-color: #282E38;
+	border-radius: 3px;
+}
+body *::-webkit-scrollbar-track {
+	background-color: #DFE0E1;
+	border-radius: 3px;
+}
+img {
+	max-width: 100%;
+	border: 0px;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: #222222;
+}
+input,button,select,textarea {
+	font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1;
+	outline: 0;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	background: none;
+	vertical-align: middle;
+	appearance: none;
+	-webkit-appearance: none;
+}
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	padding: 0px 5px;
+	height: 24px;
+	color: #222222;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-sizing: border-box;
+	background-color: white;
+}
+select {
+	padding-right: 22px;
+	background: white url(../images/bullet_select.png) no-repeat right center;
+}
+select:hover,
+select:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="tel"]:hover,
+input[type="tel"]:focus,
+textarea:hover,
+textarea:focus {
+	border-color: #666666;
+}
+select:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="tel"]:disabled,
+textarea:disabled {
+	opacity: 1;
+	background-color: #F2F2F2;
+}
+select.link,
+input[type="text"].link,
+input[type="email"].link,
+input[type="tel"].link,
+textarea.link {
+	color: #146FE8;
+	text-decoration: underline;
+	cursor: pointer;
+	background-color: #F2F2F2;
+}
+select.al_right,
+input[type="text"].al_right,
+input[type="email"].al_right,
+input[type="tel"].al_right,
+textarea.al_right {
+	text-align: right;
+}
+select.al_center,
+input[type="text"].al_center,
+input[type="email"].al_center,
+input[type="tel"].al_center,
+textarea.al_center {
+	text-align: center;
+}
+select.al_center {
+	padding: 0px 2px 0px 0px;
+}
+button,input[type="submit"],input[type="image"] {
+	cursor: pointer;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #222222;
+	opacity: 0.4;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	background-color: white;
+	appearance: none;
+	-webkit-appearance: none;
+} 
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+	opacity: 0.45;
+	cursor: default;
+}
+input[type="checkbox"] {
+	width: 14px;
+	height: 14px;
+	border: 1px solid #B2B2B2;
+	border-radius: 2px;
+}
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+	border-color: #146FE8;
+}
+input[type="checkbox"]:disabled:hover,
+input[type="checkbox"]:disabled:focus {
+	border-color: #B2B2B2;
+}
+input[type="checkbox"]:checked {
+	border-color: #146FE8;
+	background: #146FE8 url(../images/bullet_checkbox.png) no-repeat center center;
+}
+input[type="radio"] {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #B2B2B2;
+	border-radius: 8px;
+} 
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+	border-color: #146FE8;
+}
+input[type="radio"]:disabled:hover,
+input[type="radio"]:disabled:focus {
+	border-color: #B2B2B2;
+}
+input[type="radio"]:checked {
+	border-color: #146FE8;
+	background: #146FE8 url(../images/bullet_radio.png) no-repeat center center;
+}
+textarea {
+	line-height: 120%;
+	height: auto;
+	padding: 4px 5px;
+	resize: none;
+}
+textarea::-webkit-scrollbar {
+	width: 4px;
+	border-radius: 2px;
+} 
+textarea::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+}
+textarea::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+hr {
+	display: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+	font-weight: 700;
+}
+p {
+	margin: 0px;
+}
+ul,ol {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+dl,dt,dd {
+	padding: 0px;
+	margin: 0px;
+}
+table {
+	width: 100%;
+	padding: 0px;
+	border-spacing: 0px;
+	table-layout: fixed;
+}
+table caption {
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 2px;
+	margin-top: -2px;
+}
+th,td {
+	padding: 0px;
+}
+th {
+	font-weight: 500;
+}
+fieldset legend {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+fieldset {
+	overflow: hidden;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+figure {
+	margin: 0px;
+	padding: 0px;
+}
+strong,b {
+	font-weight: 500;
+}
+i b.art_txt {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	text-align: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
